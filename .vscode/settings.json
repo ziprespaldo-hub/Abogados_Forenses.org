@@ -1,0 +1,8 @@
+{
+  "cSpell.words": ["Abogados", "Forenses", "sourceurl"]
+}
+{
+  "editor.defaultFormatter": "mattbrannon.prettiest-eslint",
+  "editor.formatOnSave": true,
+  "files.autoSave": "onFocusChange" // Optional but recommended
+}

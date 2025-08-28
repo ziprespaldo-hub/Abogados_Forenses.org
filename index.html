@@ -1,0 +1,1455 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lic. Al Ulises Azúa - Abogado Forense Especialista | Consulta Gratuita 20 min</title>
+    <meta name="description"
+        content="Único abogado con certificación completa en ciencias forenses en Jalisco. 30 años de experiencia. Peritajes criminalísticos, OSINT, grafoscopía. Consulta gratuita 15 min.">
+
+    <!-- SEO Meta Tags -->
+    <meta name="keywords" content="abogado forense, criminalística, grafoscopía, OSINT, perito, Guadalajara, Jalisco">
+    <meta name="author" content="Lic. Al Ulises Azúa">
+    <meta name="robots" content="index, follow">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-color: #1a365d;
+            --secondary-color: #2d3748;
+            --accent-color: #ffd700;
+            --success-color: #28a745;
+            --danger-color: #dc3545;
+            --warning-color: #fa0702;
+            --info-color: #17a2b8;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* HEADER STYLES */
+        .header-top {
+            background: linear-gradient(45deg, var(--danger-color), #ff6b6b);
+            color: white;
+            padding: 8px 0;
+            text-align: center;
+            font-weight: bold;
+            animation: pulse 2s infinite;
+        }
+
+        /* Hover elegante */
+        .nav-link {
+            transition: color 0.2s ease-in-out, transform 0.2s;
+        }
+
+        .nav-link:hover {
+            color: #dc3545;
+            /* Rojo bootstrap */
+            transform: translateY(-2px);
+        }
+
+        /* Botón urgencia con efecto pulse */
+        .pulse {
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(220, 53, 69, 0.7);
+            }
+
+            70% {
+                box-shadow: 0 0 0 10px rgba(220, 53, 69, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(220, 53, 69, 0);
+            }
+        }
+
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.8;
+            }
+        }
+
+        .navbar-brand img {
+            height: 60px;
+            width: auto;
+        }
+
+        .badge-forense {
+            background: linear-gradient(45deg, var(--success-color), #20c997);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        /* HERO SECTION */
+        .hero-section {
+            background: linear-gradient(135deg, rgba(26, 54, 93, 0.9), rgba(45, 55, 72, 0.9)),
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grid)"/></svg>');
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            color: white;
+            position: relative;
+            padding: 80px 0;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero-content .lead {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .specialties-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .specialty-tag {
+            background: rgba(255, 215, 0, 0.2);
+            border: 2px solid var(--accent-color);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        /* FORM STYLES */
+        .consultation-form {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .form-floating .form-control {
+            border: 2px solid rgba(26, 54, 93, 0.1);
+            border-radius: 15px;
+            padding: 20px 15px 10px;
+            font-size: 1rem;
+        }
+
+        .form-floating .form-control:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 0.25rem rgba(26, 54, 93, 0.25);
+        }
+
+        .btn-consultation {
+            background: linear-gradient(45deg, var(--success-color), #20c997);
+            border: none;
+            border-radius: 50px;
+            padding: 15px 30px;
+            font-weight: bold;
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+        .btn-consultation:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(40, 167, 69, 0.3);
+        }
+
+        /* STATS SECTION */
+        .stats-card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .stats-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .stats-number {
+            font-size: 3rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .stats-label {
+            color: #666;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+        }
+
+        /* SERVICES SECTION */
+        .service-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            height: 100%;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 2rem;
+        }
+
+        .forensic-science {
+            background: linear-gradient(45deg, #e74c3c, #c0392b);
+            color: white;
+        }
+
+        .criminal-law {
+            background: linear-gradient(45deg, #3498db, #2980b9);
+            color: white;
+        }
+
+        .investigation {
+            background: linear-gradient(45deg, #f39c12, #e67e22);
+            color: white;
+        }
+
+        .civil-law {
+            background: linear-gradient(45deg, #1abc9c, #16a085);
+            color: white;
+        }
+
+        /* TESTIMONIALS */
+        .testimonial-card {
+            background: #f8f9fa;
+            border-left: 4px solid var(--primary-color);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .testimonial-card::before {
+            content: '"';
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            font-size: 60px;
+            color: var(--primary-color);
+            opacity: 0.3;
+        }
+
+        /* PRICING CARDS */
+        .pricing-card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .pricing-card.featured {
+            border: 3px solid var(--accent-color);
+            transform: scale(1.05);
+        }
+
+        .pricing-card.featured::before {
+            content: 'MÁS POPULAR';
+            position: absolute;
+            top: 20px;
+            right: -30px;
+            background: var(--accent-color);
+            color: var(--primary-color);
+            padding: 5px 40px;
+            font-weight: bold;
+            font-size: 0.8rem;
+            transform: rotate(45deg);
+        }
+
+        /* FLOATING ELEMENTS */
+        .floating-whatsapp {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            animation: bounce 2s infinite;
+        }
+
+        .floating-whatsapp .btn {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+        }
+
+        @keyframes bounce {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-10px);
+            }
+
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+
+        /* PROCESS STEPS */
+        .process-step {
+            background: white;
+            border: 2px dashed #dee2e6;
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .process-step:hover {
+            border-color: var(--primary-color);
+            box-shadow: 0 10px 25px rgba(26, 54, 93, 0.15);
+        }
+
+        .process-number {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+        }
+
+        /* FOOTER */
+        .footer {
+            background: var(--secondary-color);
+            color: white;
+            padding: 50px 0 20px;
+        }
+
+        .footer h5 {
+            color: var(--accent-color);
+            margin-bottom: 20px;
+        }
+
+        .footer a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer a:hover {
+            color: var(--accent-color);
+        }
+
+        /* RESPONSIVE DESIGN */
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-content .lead {
+                font-size: 1.1rem;
+            }
+
+            .stats-number {
+                font-size: 2.5rem;
+            }
+
+            .consultation-form {
+                padding: 20px;
+            }
+
+            .pricing-card.featured {
+                transform: none;
+            }
+        }
+
+        /* ANIMATION CLASSES */
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .fade-in-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* UTILITY CLASSES */
+        .text-gradient {
+            background: linear-gradient(45deg, var(--primary-color), var(--info-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .section-padding {
+            padding: 80px 0;
+        }
+
+        .divider {
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--accent-color), transparent);
+            margin: 40px auto;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <!-- LOGO -->
+            <a class="navbar-brand d-flex align-items-center" href="#inicio">
+                <img src="images/AI_Logo.png" alt="FORENSIC" style="width:120px; height:120px; object-fit:cover;">
+                <div>
+                    <div class="fw-bold text-dark fs-5"> ABOGADO Y PERITO</div>
+                    <div class="badge bg-dark text-white rounded-pill px-2 py-1 small">
+
+                    </div>
+                </div>
+            </a>
+
+            <!-- TOGGLER + PHONE -->
+            <div class="d-flex align-items-center d-lg-none">
+                <a href="tel:333 778 5120" class="btn btn-outline-primary btn-sm me-2">
+                    <i class="fas fa-phone"></i>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <!-- NAV LINKS -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="main/inicio.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experiencia">Experiencia</a></li>
+
+                    <!-- DROPDOWN -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Especialidades
+                        </a>
+                        <ul class="dropdown-menu shadow-sm">
+                            <li>
+                                <h6 class="dropdown-header text-danger">🔬 CIENCIAS FORENSES</h6>
+                            </li>
+                            <li><a class="dropdown-item" href="https://forensic-kggyz-hrbkd.pyxl.ai/">Criminalística</a>
+                            </li>
+                            <li><a class="dropdown-item"
+                                    href="https://peritajes-peritos.es/articulos/articulo-peritaje--que-es-la-grafoscopia-forense-/">Grafoscopía</a>
+                            </li>
+                            <li><a class="dropdown-item"
+                                    href="https://peritojudicial.com/documentoscopia/">Documentoscopia</a></li>
+                            <li><a class="dropdown-item"
+                                    href="https://www.ibm.com/mx-es/think/topics/osint">Investigacion OSINT</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <h6 class="dropdown-header text-primary">⚖️ DERECHO</h6>
+                            </li>
+                            <li><a class="dropdown-item" href="#servicios">Penal</a></li>
+                            <li><a class="dropdown-item" href="#servicios">Civil</a></li>
+                            <li><a class="dropdown-item" href="#servicios">Familiar</a></li>
+                            <li><a class="dropdown-item" href="#servicios">Mercantil</a></li>
+                            <li><a class="dropdown-item" href="#servicios">Sucesiones</a></li>
+                            <li><a class="dropdown-item" href="#servicios">Laboral</a></li>
+                            <li><a class="dropdown-item" href="#servicios">Estudio de caso</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="#proceso">¿Llamo y?</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonios">Casos de Estudio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                    <a href="main/lic_al_ulises.html">Mi Tarjeta</a>
+
+                    <!-- URGENCIA -->
+                    <li class="nav-item ms-3">
+                        <a href="tel:333 778 5120" class="btn btn-danger btn-sm fw-bold pulse">
+                            <i class="fas fa-phone me-1"></i> ¿ES URGENTE? 24/7
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="inicio">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <div class="hero-content" data-aos="fade-right">
+                        <div class="badge bg-warning text-dark p-2 mb-4">
+                            <i class="fas fa-certificate me-2"></i>Peritajes y Estudios Forenses y Tecnologicos
+                        </div>
+
+                        <h1>Abogado Forense Especialista: Derecho + Análisis Científico = Resultados Únicos</h1>
+
+                        <p class="lead">20+ años de experiencia combinando defensa legal con análisis científico. Perito
+                            certificado.
+                        </p>
+
+                        <div class="specialties-tags">
+                            <span class="specialty-tag">CRIMINALÍSTICA</span>
+                            <span class="specialty-tag">GRAFOSCOPÍA</span>
+                            <span class="specialty-tag">DOCUMENTOSCOPÍA</span>
+                            <span class="specialty-tag">INVESTIGACION OSINT</span>
+                            <span class="specialty-tag">PERFILACIÓN</span>
+                        </div>
+
+                        <div class="alert alert-info bg-light bg-opacity-90 text-dark rounded-4 my-4">
+                            <i class="fas fa-lightbulb text-warning me-2"></i>
+                            <strong>Mi diferencia competitiva:</strong> Mientras otros abogados solo conocen la ley, yo
+                            analizo científicamente cada prueba para encontrar inconsistencias que resulten en
+                            absoluciones y sentencias favorables.
+                        </div>
+
+                        <div class="d-flex flex-wrap gap-3 mt-4">
+                            <a href="#formulario-consulta" class="btn btn-consultation btn-lg">
+                                <i class="fas fa-phone me-2"></i>Consulta GRATUITA 15 Min
+                            </a>
+                            <a href="tel:333 778 5120" class="btn btn-outline-light btn-lg">
+                                <i class="fas fa-exclamation-triangle me-2"></i>URGENCIA 24/7
+                            </a>
+                        </div>
+
+                        <div class="alert alert-warning bg-warning bg-opacity-20 text-red rounded-4 mt-4">
+                            <small><i class="fas fa-info-circle me-1"></i>
+                                <h2><strong>Nota importante:</strong> No representamos casos de delitos sexuales
+                                    como
+                                    imputados, ni agresión o violencia de género como agresores. Para víctimas sin
+                                    recursos,
+                                    completar formulario para evaluación gratuita.</h2>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <!-- FORMULARIO DE CONSULTA -->
+                    <div class="consultation-form" id="formulario-consulta" data-aos="fade-left">
+                        <div class="text-center mb-4">
+                            <div class="alert alert-warning">
+                                <i class="fas fa-hourglass-half me-2"></i>
+                                <strong>Formulario Primer Contacto</strong>
+                                <br>
+                                <small>Llene el Formulario y recibira un Email<br>
+                                    OBLIGATORIO</small>
+                            </div>
+                            <h4 class="text-primary">Consulta GRATUITA</h4>
+                            <p class="text-muted mb-0">20 Minutos • Sin Compromiso</p>
+                        </div>
+
+                        <form id="consultaForm">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Nombre"
+                                    required>
+                                <label for="name">Nombre Completo</label>
+                            </div>
+
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Email"
+                                    required>
+                                <label for="email">Correo Electrónico</label>
+                            </div>
+
+                            <div class="form-floating mb-3">
+                                <input type="tel" class="form-control" id="phone" name="phone" placeholder="Teléfono"
+                                    required>
+                                <label for="phone">WhatsApp (10 dígitos)</label>
+                            </div>
+
+                            <div class="form-floating mb-3">
+                                <select class="form-select" id="consultation_type" name="consultation_type" required>
+                                    <option value="">Selecciona tu situación...</option>
+                                    <optgroup label="🔬 CASOS FORENSES (Mi Especialidad)">
+                                        <option value="forense-grafoscopia">📝 Documentos o firmas falsas</option>
+                                        <option value="forense-osint">🌐 Investigación digital/cibernética</option>
+                                        <option value="forense-criminal">👤 Perfilación criminal</option>
+                                        <option value="fraude-documentos">💰 Delitos con documentos alterados</option>
+                                        <option value="reconstruccion">🔍 Reconstrucción de hechos</option>
+                                    </optgroup>
+                                    <optgroup label="⚖️ DERECHO PENAL + FORENSE">
+                                        <option value="penal-forense">🏛️ Caso penal foresne</option>
+                                        <option value="penal-forense">🏛️ Carpeta de Investigacion</option>
+                                        <option value="masc">💻 Medios Alternos</option>
+                                    </optgroup>
+                                    <optgroup label="📋 DERECHO TRADICIONAL">
+                                        <option value="penal-tradicional">🏛️ Caso penal en Proceso</option>
+                                        <option value="civil-creditos">💳 Recuperación de créditos</option>
+                                        <option value="familiar">👨‍👩‍👧‍👦 Derecho familiar</option>
+                                        <option value="sucesiones">👨‍👩‍👧‍👦 Sucesiones</option>
+                                        <option value="conducef">👨‍👩‍👧‍👦 CONDUCEF</option>
+                                        <option value="consumidor">👨‍👩‍👧‍👦 Proc. del Consumidor</option>
+                                    </optgroup>
+                                </select>
+                                <label for="consultation_type">¿Tu caso requiere análisis forense?</label>
+                            </div>
+
+                            <div class="form-floating mb-3">
+                                <select class="form-select" id="urgency" name="urgency" required>
+                                    <option value="">Selecciona urgencia...</option>
+                                    <option value="muy-urgente">🔴 MUY URGENTE (Orden/detenido)</option>
+                                    <option value="urgente">🟡 URGENTE (Proceso en curso)</option>
+                                    <option value="importante">🟢 IMPORTANTE (Evaluando opciones)</option>
+                                    <option value="consulta">🔵 CONSULTA PREVENTIVA</option>
+                                </select>
+                                <label for="urgency">¿Qué tan urgente es tu caso?</label>
+                            </div>
+
+                            <div class="form-floating mb-4">
+                                <textarea class="form-control" id="case_description" name="case_description"
+                                    style="height: 80px" placeholder="Descripción"></textarea>
+                                <label for="case_description">Describe tu situación brevemente (opcional)</label>
+                            </div>
+
+                            <button type="submit" class="btn btn-consultation w-100 py-3">
+                                <i class="fas fa-calendar-check me-2"></i>Reservar Consulta GRATUITA
+                            </button>
+
+                            <div class="text-center mt-3">
+                                <small class="text-muted">
+                                    <i class="fas fa-clock me-1"></i>Respuesta en menos de 2 horas<br>
+                                    <i class="fas fa-shield-alt me-1"></i>100% confidencial
+                                </small>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ESTADÍSTICAS -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="0">
+                    <div class="stats-card">
+                        <div class="stats-number">20+</div>
+                        <div class="stats-label">Años de Experiencia</div>
+                        <i class="fas fa-graduation-cap text-primary mt-3" style="font-size: 2rem;"></i>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stats-card">
+                        <div class="stats-number">Cedulas de Profesion</div>
+                        <div class="stats-label">Litigio en toda la Republica</div>
+                        <i class="fas fa-certificate text-success mt-3" style="font-size: 2rem;"></i>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stats-card">
+                        <div class="stats-number">Archivo Indexable</div>
+                        <div class="stats-label">Estudio de caso</div>
+                        <i class="fas fa-gavel text-warning mt-3" style="font-size: 2rem;"></i>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stats-card">
+                        <div class="stats-number">24/7</div>
+                        <div class="stats-label">Urgencias Penales</div>
+                        <i class="fas fa-phone text-danger mt-3" style="font-size: 2rem;"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="400">
+                <h3 class="fw-bold mb-4">¿Que es un Abogado Forense?</h3>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <p class="lead text-muted">
+                            <strong>El abogado forense es un profesional del derecho que no solo posee conocimientos
+                                legales, sino que también tiene la capacidad de entender y aplicar las herramientas y
+                                descubrimientos de la ciencia forense para fortalecer y fundamentar los casos legales
+                                que representa. </strong>
+                        </p>
+                        <div class="alert alert-success mt-4">
+                            <i class="fas fa-trophy me-2"></i>
+                            <strong>Funciones principales de un abogado forense:</strong> Análisis científico de
+                            pruebas, Conexión entre ciencia y derecho, Desarrollo de estrategias.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MI PROCESO -->
+    <section class="section-padding" id="proceso">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="fw-bold">Proceso Transparente: 3 Pasos Simples</h2>
+                <p class="text-muted lead">Desde la consulta gratuita hasta la solución de tu caso</p>
+                <div class="divider"></div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="0">
+                    <div class="process-step">
+                        <div class="process-number bg-success">1</div>
+                        <h4 class="text-success">CONSULTA GRATUITA</h4>
+                        <h5 class="text-success mb-3">20 Minutos - $0 MXN</h5>
+                        <ul class="list-unstyled text-start">
+                            <li><i class="fas fa-check text-success me-2"></i>Evalúo la viabilidad de tu caso</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Determino si requiere análisis forense
+                            </li>
+                            <li><i class="fas fa-check text-success me-2"></i>Te doy estrategia inicial</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Cotización transparente</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Sin compromiso ni presión</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="process-step">
+                        <div class="process-number bg-primary">2</div>
+                        <h4 class="text-primary">ANÁLISIS COMPLETO</h4>
+                        <h5 class="text-primary mb-3">45 Minutos - Cotizacion MXN</h5>
+                        <ul class="list-unstyled text-start">
+                            <li><i class="fas fa-check text-primary me-2"></i>Revisión detallada del expediente</li>
+                            <li><i class="fas fa-check text-primary me-2"></i>Análisis forense si aplica</li>
+                            <li><i class="fas fa-check text-primary me-2"></i>Desarrollo del caso en papel</li>
+                            <li><i class="fas fa-check text-primary me-2"></i>Recomendaciones específicas por escrito
+                            </li>
+                            <li><i class="fas fa-check text-primary me-2"></i>Estrategia legal completa</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="process-step">
+                        <div class="process-number bg-warning">3</div>
+                        <h4 class="text-warning">GUIA ABC LEGAL</h4>
+                        <h5 class="text-warning mb-3">Manual Completo - INCLUIDA</h5>
+                        <ul class="list-unstyled text-start">
+                            <li><i class="fas fa-check text-warning me-2"></i>Guia del proceso personalizada</li>
+                            <li><i class="fas fa-check text-warning me-2"></i><strong>QUE</strong> hacer exactamente
+                            </li>
+                            <li><i class="fas fa-check text-warning me-2"></i><strong>CÓMO</strong> ejecutar cada paso
+                            </li>
+                            <li><i class="fas fa-check text-warning me-2"></i><strong>DÓNDE</strong> realizar trámites
+                            </li>
+                            <li><i class="fas fa-check text-warning me-2"></i>Formularios por etapa incluidos</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5" data-aos="fade-up">
+                <div class="alert alert-info d-inline-block">
+                    <i class="fas fa-info-circle me-2"></i>
+                    <strong>¿Tu caso requiere representación legal completa?</strong> Te cotizo honorarios justos y
+                    transparentes después del análisis.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICIOS ESPECIALIZADOS -->
+    <section class="section-padding bg-light" id="servicios">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="fw-bold">OTROS SERVICIOS FORENSES</h2>
+                <p class="text-muted lead"><strong>Recuperación de datos:
+                        Extraccion y reconstruccion de datos que han sido ocultos o eliminados de un sistema, incluyendo
+                        imágenes, mensajes o registros de llamadas.
+                        Análisis de redes: Captura y examen del tráfico de la red para detectar actividad maliciosa o
+                        rastrear actividades sospechosas.
+                        Análisis de memoria: Extraccion y analisis del contenido de la memoria RAM de un sistema para
+                        obtener información volátil.
+                        Análisis de sistemas de archivos: Analisis de la estructura de los sistemas de archivos en
+                        discos duros y otros medios.
+                        Examen de metadatos: Analisis de información adicional sobre archivos, como fechas de creación,
+                        ubicación o el dispositivo utilizado.
+                        Investigaciones de ciberseguridad: Hacking Etico con equipos de accion/respuesta a incidentes
+                        y/o entender el alcance de un ataque.</strong></p>
+                <div class="divider"></div>
+            </div>
+
+            <div class="row g-4">
+                <!-- CIENCIAS FORENSES -->
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="0">
+                    <div class="service-card" id="forense">
+                        <div class="service-icon forensic-science">
+                            <i class="fas fa-microscope"></i>
+                        </div>
+                        <h3 class="text-center mb-3">Ciencias Forenses y Criminalística</h3>
+                        <div class="badge bg-danger text-white mb-3 w-100">Egresado del IJCF</div>
+
+                        <p class="text-muted mb-4">
+                            El perito, mediante el análisis científico de las pruebas, identifica inconsistencias que,
+                            debido a su especialización, escapan a la detección por parte de otros profesionales
+                            legales.
+                        </p>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul class="list-unstyled">
+                                    <li><i
+                                            class="fas fa-check text-success me-2"></i><strong>Grafoscopía:</strong>Analisis
+                                        de firmas</li>
+                                    <li><i class="fas fa-check text-success me-2"></i><strong>Documentoscopía:</strong>
+                                        Detección alteraciones</li>
+                                    <li><i class="fas fa-check text-success me-2"></i><strong>Investigacion
+                                            OSINT:</strong> Investigación digital</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check text-success me-2"></i><strong>Perfilación:</strong>
+                                        Análisis criminal</li>
+                                    <li><i class="fas fa-check text-success me-2"></i><strong>Reconstrucción:</strong>
+                                        De hechos</li>
+                                    <li><i class="fas fa-check text-success me-2"></i><strong>Balística:</strong>
+                                        Análisis proyectiles</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="alert alert-success mt-3">
+                            <i class="fas fa-trophy me-2"></i>
+                            <strong>Investigacion OSINT:</strong> La inteligencia de código abierto (OSINT) es el
+                            proceso de recopilación y análisis de información disponible públicamente de fuentes como
+                            cuentas de redes sociales, registros gubernamentales y directorios en línea para evaluar
+                            amenazas, tomar decisiones o responder preguntas específicas.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DERECHO PENAL -->
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card">
+                        <div class="service-icon criminal-law">
+                            <i class="fas fa-balance-scale"></i>
+                        </div>
+                        <h3 class="text-center mb-3">Derecho Penal + Análisis Forense</h3>
+                        <div class="badge bg-primary text-white mb-3 w-100">BUSQUEDA DE SOLUCIONES ALTERNAS</div>
+
+                        <p class="text-muted mb-4">
+                            NO TODAS LAS CAUSAS PENALES TIEEN QUE TERMINAR EN UN SENTENCIA CONDENATYORIA O LA PRIVACION
+                            DE LA LIBERTAD
+                        </p>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check text-primary me-2"></i>Delitos Patrimoniales</li>
+                                    <li><i class="fas fa-check text-primary me-2"></i>Falsificación de firmas</li>
+                                    <li><i class="fas fa-check text-primary me-2"></i>Suplantacion de identidad</li>
+                                    <li><i class="fas fa-check text-primary me-2"></i>Delitos cibernéticos</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check text-primary me-2"></i>Delitos por Violencia</li>
+                                    <li><i class="fas fa-check text-primary me-2"></i>Hechos de Sangre</li>
+                                    <li><i class="fas fa-check text-primary me-2"></i>Delitos del orden moral</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="alert alert-danger mt-3">
+                            <i class="fas fa-clock me-2"></i>
+                            <strong>URGENCIA PENAL:</strong> Si hay orden de aprehensión, llama AHORA 24/7.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- INVESTIGACIÓN ESPECIALIZADA -->
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card">
+                        <div class="service-icon investigation">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3 class="text-center mb-3">Investigación OSINT y Digital</h3>
+                        <div class="badge bg-warning text-dark mb-3 w-100">Constamos con Software y Hardware de ultima
+                            geneneracion</div>
+
+                        <p class="text-muted mb-4">
+                            Investigación digital profesional en fuentes abiertas para casos complejos.
+                        </p>
+
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-warning me-2"></i>Localización de personas desaparecidas
+                            </li>
+                            <li><i class="fas fa-check text-warning me-2"></i>Investigación de activos ocultos</li>
+                            <li><i class="fas fa-check text-warning me-2"></i>Análisis de redes sociales</li>
+                            <li><i class="fas fa-check text-warning me-2"></i>Evidencia digital</li>
+                            <li><i class="fas fa-check text-warning me-2"></i>Ciberdelitos</li>
+                        </ul>
+
+                        <div class="text-center mt-3">
+                            <span class="fw-bold text-warning fs-5">Cotizacion MXN</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DERECHO CIVIL Y FAMILIAR -->
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card">
+                        <div class="service-icon civil-law">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3 class="text-center mb-3">Derecho Civil y Familiar</h3>
+                        <div class="badge bg-info text-white mb-3 w-100">Litigio y Asesoria</div>
+
+                        <p class="text-muted mb-4">
+                            Ofrecemos asesoramiento y representación legal especializada en casos civiles y de derecho
+                            familiar, incluyendo análisis periciales cuando sea necesario..
+                        </p>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check text-info me-2"></i>Recuperación de Créditos</li>
+                                    <li><i class="fas fa-check text-info me-2"></i>Divorcio</li>
+                                    <li><i class="fas fa-check text-info me-2"></i>Pensiones Alimenticias</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check text-info me-2"></i>Guarda y custodia</li>
+                                    <li><i class="fas fa-check text-info me-2"></i>Civil/mercantil</li>
+                                    <li><i class="fas fa-check text-info me-2"></i>Patrimonio familiar</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="alert alert-info mt-3">
+                            <small><strong>Peritacion incluida sin costo extra:</strong> En casos que lo
+                                requieran</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRECIOS TRANSPARENTES -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="fw-bold">Servicios y Costos 100% Transparentes</h2>
+                <p class="text-muted lead">Sin sorpresas. Conoce exactamente qué obtienes y cuánto cuesta</p>
+                <div class="alert alert-warning d-inline-block">
+                    <i class="fas fa-hourglass-half me-2"></i>
+                    <strong>APOYO:</strong> A personas economicamente limitadas o sujetas a delitos de violencia.
+                </div>
+                <div class="divider"></div>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <!-- CONSULTA GRATUITA -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
+                    <div class="pricing-card">
+                        <div class="bg-success text-white p-3 rounded mb-4">
+                            <h4 class="mb-0">CONSULTA GRATUITA</h4>
+                        </div>
+                        <div class="display-4 fw-bold text-success mb-2">$0</div>
+                        <p class="text-muted">20 Minutos</p>
+                        <div class="badge bg-warning text-dark mb-3">ANALIZAMOS TU SITUACION</div>
+
+                        <ul class="list-unstyled text-start">
+                            <li><i class="fas fa-check text-success me-2"></i>Análisis de situacion</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Estudio y viavilidad
+                            </li>
+                            <li><i class="fas fa-check text-success me-2"></i>Estrategia inicial</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Cotización transparente</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Acorde a tu desicion Iniciamos</li>
+                        </ul>
+
+                        <div class="alert alert-success mt-3">
+                            <small><strong>SIEMPRE INFORMADO:</strong> Interfaz de usuario para que estes al corriente
+                                del status de tu Caso</small>
+                        </div>
+
+                        <a href="#formulario-consulta" class="btn btn-success w-100 py-3">
+                            <i class="fas fa-phone me-2"></i>Agendar Llamada
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ANÁLISIS COMPLETO -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="pricing-card featured">
+                        <div class="bg-primary text-white p-3 rounded mb-4">
+                            <h4 class="mb-0">ASESORIA Y ANÁLISIS COMPLETO CON RESPALDO DOCUMENTAL Y POR ESCRITO</h4>
+                        </div>
+                        <div class="display-4 fw-bold text-primary mb-2">$1,500</div>
+                        <p class="text-muted">Entrevista telefonica o videollamada Inicial de 45 Minutos</p>
+                        <small class="text-decoration-line-through text-muted"> Asesoria telefonica a la entrega de
+                            Documentacion</small>
+
+                        <ul class="list-unstyled text-start mt-4">
+                            <li><i class="fas fa-check text-primary me-2"></i>Llamada de 45 minutos en la que analizamos
+                                el contexto general del estudio y el problema legal. </li>
+                            <li><i class="fas fa-check text-primary me-2"></i>Antecedentes y hechos relevantes: Detalla
+                                los hechos clave, los protagonistas involucrados y los datos relevantes que dan forma al
+                                problema. </li>
+                            <li><i class="fas fa-check text-primary me-2"></i>Evaluación y Análisis del Caso: Examino
+                                las causas que llevaron al problema o la situación y las consecuencias jurídicas y
+                                sociales del caso.</li>
+                            <li><i class="fas fa-check text-primary me-2"></i>Desarrollo y Propuestas de Soluciones y
+                                Estrategias Legales</li>
+                            <li><i class="fas fa-check text-primary me-2"></i>Recomendaciones específicas: Resultados y
+                                Conclusiones</li>
+                        </ul>
+
+                        <div class="alert alert-primary mt-3">
+                            <small><strong>INCLUYE:</strong> Guía, Formularios y Escritos personalizados</small>
+                        </div>
+
+                        <a href="#formulario-consulta" class="btn btn-primary w-100 py-3">
+                            <i class="fas fa-calendar me-2"></i>Agendar Consulta
+                        </a>
+                    </div>
+                </div>
+
+                <!-- SERVICIOS FORENSES -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="pricing-card">
+                        <div class="bg-warning text-dark p-3 rounded mb-4">
+                            <h4 class="mb-0">SERVICIOS FORENSES</h4>
+                        </div>
+                        <div class="display-4 fw-bold text-warning mb-2">Desde</div>
+                        <div class="fs-2 fw-bold text-warning">$8,000</div>
+                        <p class="text-muted">Peritajes especializados</p>
+
+                        <ul class="list-unstyled text-start">
+                            <li><i class="fas fa-check text-warning me-2"></i>Grafoscopía: $Cotiza</li>
+                            <li><i class="fas fa-check text-warning me-2"></i>OSINT: $Cotiza</li>
+                            <li><i class="fas fa-check text-warning me-2"></i>Perfilación: $Cotiza</li>
+                            <li><i class="fas fa-check text-warning me-2"></i>Reconstrucción: $Cotiza</li>
+                            <li><i class="fas fa-check text-warning me-2"></i>Perfilacion Criminal y Laboral</li>
+                        </ul>
+
+                        <div class="alert alert-warning mt-3">
+                            <small>Asesoria sobre Capitulaciones </small>
+                        </div>
+
+                        <a href="tel:333 778 5120" class="btn btn-warning w-100 py-3">
+                            <i class="fas fa-phone me-2"></i>Consultar Precio
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5" data-aos="fade-up">
+                <div class="alert alert-info">
+                    <h5><i class="fas fa-handshake me-2"></i>Garantía de Transparencia</h5>
+                    <p class="mb-0">Todos los costos se fijan desde el primer día. Sin sorpresas, sin cobros ocultos.
+                        Para representación legal completa, cotizo honorarios justos después del análisis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section class="section-padding bg-light" id="testimonios">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="fw-bold">Casos de Estudio</h2>
+                <p class="text-muted lead">Ejemplos de situaciones y procesos comunes</p>
+                <div class="divider"></div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="0">
+                    <div class="testimonial-card">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="bg-success text-white rounded-circle p-2 me-3">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-0">Delito patrimonia por falsificacion de firma</h5>
+                                <small class="text-muted">Mercantil - Penal</small>
+                            </div>
+                        </div>
+                        <p class="fst-italic">
+                            "La falsificación de una firma se cataloga como el delito de falsedad documental, el cual
+                            puede tener consecuencias patrimoniales y penales significativas, dependiendo de si se
+                            afecta un documento público o privado. Este delito implica la alteración o creación de un
+                            documento con una firma falsa con la intención de causar un perjuicio. Para probar la
+                            falsedad, se puede recurrir a un perito calígrafo, y para iniciar la denuncia, se deben
+                            reunir datos de pruebas y acudir a las autoridades competentes.</strong> Este es un delito
+                            muy comun dado la facilidad de acceder a datos confidenciales."
+                        </p>
+                        <div class="text-end">
+                            <span class="badge bg-success">Implica proceso y atencion especiizada forense</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-card">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="bg-primary text-white rounded-circle p-2 me-3">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-0">Investigación OSINT</h5>
+                                <small class="text-muted">Cibernetico - Persona de Interes</small>
+                            </div>
+                        </div>
+                        <p class="fst-italic">
+                            "La investigación OSINT (Open Source Intelligence) es crucial para investigar a una persona
+                            de interés que cometió fraude económico contra un socio. OSINT implica la recopilación y
+                            análisis sistemático de datos disponibles públicamente. En el contexto del fraude, esto
+                            incluye identificar quién es la persona, sus actividades y conexiones. Se utiliza para la
+                            detección y prevención de fraude, recolectando información para comprender mejor el perfil
+                            del individuo involucrado y sus posibles acciones. La clave es la combinación de
+                            recopilación intencionada de datos y un análisis riguroso para obtener conclusiones
+                            tangibles y apoyar la investigación del fraude..</strong> Diversas fuentes permiten
+                            identificar al sospechoso, sus vínculos, patrones de comportamiento y localizacion."
+                        </p>
+                        <div class="text-end">
+                            <span class="badge bg-primary">Open Source Intelligence</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="testimonial-card">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="bg-danger text-white rounded-circle p-2 me-3">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-0">Violencia de Género</h5>
+                                <small class="text-muted">Profesionista - Guadalajara</small>
+                            </div>
+                        </div>
+                        <p class="fst-italic">
+                            "La investigación forense en casos de falsa denuncia por violencia de género, donde la
+                            acusación proviene de una cónyuge, implica un análisis minucioso. Se debe determinar la
+                            veracidad de las acusaciones, considerando que, aunque existen casos reales de violencia,
+                            también se presentan denuncias falsas. Estas falsas denuncias pueden tener consecuencias
+                            graves para el acusado, por lo que la investigación debe ser exhaustiva para proteger a los
+                            inocentes..</strong> En una investigación forense y judicial, se utilizan enfoques
+                            multidisciplinarios para evaluar la veracidad de las denuncias. A continuación se presentan
+                            métodos y herramientas comunes, con énfasis en la objetividad y la protección de derechos de
+                            todas las partes."
+                        </p>
+                        <div class="text-end">
+                            <span class="badge bg-danger">PERFILACION - CRIMINOLOGIA</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5" data-aos="fade-up">
+                <div class="alert alert-success">
+                    <h4><i class="fas fa-chart-bar me-2"></i>Participación típica en un proceso legal</h4>
+                    <div class="row mt-3">
+                        <div class="col-md-3">
+                            <h2 class="text-success mb-0">Partes involucradas</h2>
+                            <small>Demandante / Querellante / Acusante: quien inicia la acción.</small>
+                        </div>
+                        <div class="col-md-3">
+                            <h2 class="text-success mb-0">+</h2>
+                            <small>Demandado / Antagonista / Responsable: quien debe responder o defenderse.</small>
+                        </div>
+                        <div class="col-md-3">
+                            <h2 class="text-success mb-0">y</h2>
+                            <small>Terceros interesados (opcional): pueden intervenir con intereses propios (por
+                                ejemplo, co-demandantes, terceros perjudicados, entidades coadyuvantes).</small>
+                        </div>
+                        <div class="col-md-3">
+                            <h2 class="text-success mb-0">Ante</h2>
+                            <small>Juez o Fiscal / Ministerio Público / Peritos</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MI EXPERIENCIA -->
+    <section class="section-padding" id="experiencia">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="p-4">
+                        <div class="badge bg-primary text-white mb-3 p-2">
+                            <i class="fas fa-certificate me-2"></i>Licenciatura, Especialidades y Diplomados
+                            presenciales y en linea
+                        </div>
+                        <h2 class="fw-bold mb-4">Mi Experiencia: Abogado Litigante, Funcionario Publico y Docente
+                            Universitario</h2>
+
+                        <p class="lead text-muted mb-4">
+                            Con casi tres décadas de experiencia, combino mi formación en derecho complementandolo con
+                            las ciencias forenses, permitiéndome ofrecer soluciones legales respaldadas por análisis
+                            científicos.
+                        </p>
+
+                        <div class="row g-4 mb-4">
+                            <div class="col-md-6">
+                                <h4 class="text-gradient">Mi Formación:</h4>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-graduation-cap text-primary me-2"></i><strong>Licenciatura en
+                                            Derecho</strong> - Universisdad de Guadalajara</li>
+                                    <li><i
+                                            class="fas fa-certificate text-success me-2"></i><strong>Criminalística</strong>
+                                        - IJCF</li>
+                                    <li><i class="fas fa-microscope text-warning me-2"></i><strong>Grafoscopía</strong>
+                                        Documentosopia
+                                    </li>
+                                    <li><i class="fas fa-globe text-info me-2"></i><strong>OSINT</strong> Programador
+                                        Analista Titulado y certificaciones por Microsoft e IBM
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h4 class="text-gradient">Actualizacion Constante, ademas::</h4>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-trophy text-warning me-2"></i>Escritura de textos legales</li>
+                                    <li><i class="fas fa-balance-scale text-primary me-2"></i>Proyeccion y desarrollo de
+                                        Emprendimientos
+                                    </li>
+                                    <li><i class="fas fa-users text-success me-2"></i>Estudios de Mercado, Viavilidad,
+                                        Factibilidad</li>
+                                    <li><i class="fas fa-clock text-danger me-2"></i>Proyecciones Financieras</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="alert alert-primary mb-4">
+                            <i class="fas fa-lightbulb me-2"></i>
+                            <strong>Nuestro compromiso:</strong> Ofrecer un servicio integral que combina estrategia
+                            legal con análisis técnico, garantizando resultados y variedad de soluciones.
+                        </div>
+
+                        <div class="d-flex flex-wrap gap-3">
+                            <a href="#formulario-consulta" class="btn btn-primary btn-lg">
+                                <i class="fas fa-calendar me-2"></i>Consulta Gratuita
+                            </a>
+                            <a href="tel:333 778 5120" class="btn btn-outline-danger btn-lg">
+                                <i class="fas fa-phone me-2"></i>Urgencia 24/7
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="text-center">
+                        <div class="position-relative d-inline-block">
+                            <div class="bg-primary rounded-circle p-5" style="width: 400px; height: 400px;">
+                                <i class="fas fa-user-tie text-white" style="font-size: 200px; line-height: 300px;"></i>
+                            </div>
+                            <div class="position-absolute top-0 end-0 bg-warning text-dark rounded-circle p-3">
+                                <i class="fas fa-certificate fa-2x"></i>
+                            </div>
+                            <div class="position-absolute bottom-0 start-0 bg-success text-white rounded-circle p-3">
+                                <i class="fas fa-microscope fa-2x"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="section-padding bg-dark text-white" id="contacto">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="fw-bold">¿Listo Para Una Consulta Que Puede Cambiar Tu Caso?</h2>
+                <p class="lead">No esperes más. Cada día que pasa puede ser crucial para tu situación legal.</p>
+                <div class="divider"></div>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <!-- CONSULTA GRATUITA -->
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="0">
+                    <div class="card bg-success text-white h-100">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-phone fa-4x mb-4"></i>
+                            <h3>Consulta Gratuita 20 Min</h3>
+                            <p class="lead">Evaluación inicial sin costo ni compromiso</p>
+                            <a href="#formulario-consulta" class="btn btn-light btn-lg px-4 py-3">
+                                <i class="fas fa-calendar me-2"></i>Agendar Ahora
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- URGENCIAS 24/7 -->
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card bg-danger text-white h-100">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-exclamation-triangle fa-4x mb-4"></i>
+                            <h3>Urgencias 24/7</h3>
+                            <p class="lead">Para casos penales urgentes y detenciones</p>
+                            <a href="tel:333 778 5120" class="btn btn-light btn-lg px-4 py-3">
+                                <i class="fas fa-phone me-2"></i>Llamar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- INFORMACIÓN DE CONTACTO -->
+            <div class="row mt-5">
+                <div class="col-lg-8 mx-auto">
+                    <div class="row text-center g-4">
+                        <div class="col-md-4" data-aos="fade-up" data-aos-delay="0">
+                            <i class="fas fa-phone fa-3x text-warning mb-3"></i>
+                            <h5>Teléfono</h5>
+                            <p class="lead">
+                                <a href="tel:333 778 5120" class="text-white text-decoration-none">
+                                    +52 33 3778 5120
+                                </a>
+                            </p>
+                        </div>
+                        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                            <i class="fab fa-whatsapp fa-3x text-success mb-3"></i>
+                            <h5>WhatsApp</h5>
+                            <p class="lead">
+                                <a href="https://wa.me/521333 778 5120" class="text-white text-decoration-none"
+                                    target="_blank">
+                                    +52 33 3778 5120
+                                </a>
+                            </p>
+                        </div>
+                        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                            <i class="fas fa-envelope fa-3x text-info mb-3"></i>
+                            <h5>Email</h5>
+                            <p class="lead">
+                                <a href="mailto:lic.azua@gmx.com" class="text-white text-decoration-none">
+                                    consultas@abogadoforense.mx
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row mt-5 text-center">
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                            <i class="fas fa-clock fa-2x text-warning mb-3"></i>
+                            <h5>Horarios de Atención</h5>
+                            <p>
+                                <strong>Lunes a Viernes:</strong> 8:00 - 20:00
+                                <br>
+                                <strong>Sábados:</strong> 9:00 - 14:00
+                                <br>
+                                <span class="text-warning fw-bold">Urgencias penales: 24/7</span>
+                            </p>
+                        </div>
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+                            <i class="fas fa-map-marker-alt fa-2x text-danger mb-3"></i>
+                            <h5>Atencion y Asesoria e toda la Republica</h5>
+                            <p>
+                                Guadalajara - Cancun - Monterrey - Merida
+                                <br>
+                                <small>Atención en toda la zona metropolitana</small>
+                                <br>
+                                <span class="text-success">Consultas telefónicas disponibles</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <p>&copy; 2025 Lic. Al Ulises Azúa | Todos los derechos reservados</p>
+        <p><em>“La diferencia no está solo en la ley, está en la ciencia que la respalda.”</em></p>
+        <a href="nomadas.html">Blog</a> | <a href="main/formulario.html">Formulario</a>
+    </footer>
+
+    <!-- WhatsApp -->
+    <div class="floating-whatsapp">
+        <a href="https://wa.me/521333 778 5120?text=Hola%20Lic.%20Azúa,%20quiero%20una%20consulta%20gratuita"
+            target="_blank" class="btn btn-success rounded-circle p-3"><i class="fab fa-whatsapp fa-2x"></i></a>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        document.getElementById('consultaForm').addEventListener('submit', e => {
+            e.preventDefault();
+            const data = Object.fromEntries(new FormData(e.target).entries());
+            let msg = `Consulta:\nNombre: ${data.name}\nCorreo: ${data.email}\nTel: ${data.phone}\nCaso: ${data.desc}`;
+            window.open(`https://wa.me/521333 778 5120?text=${encodeURIComponent(msg)}`, '_blank');
+            alert('Redirigiendo a WhatsApp...');
+        });
+    </script>
+</body>
+
+</html>

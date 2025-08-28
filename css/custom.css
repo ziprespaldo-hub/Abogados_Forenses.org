@@ -1,0 +1,2186 @@
+@font-face {
+  font-family : "ProductSans";
+  src : url(../webfonts/Product\ Sans\ Regular.ttf);
+}
+@font-face {
+  font-family : "OpenSans";
+  src : url(../webfonts/OpenSans-Regular.ttf);
+}
+@font-face {
+  font-family : "Poppins";
+  src : url(../webfonts/Poppins-Regular.ttf);
+}
+body {
+  overflow-x : hidden;
+}
+.al-bg {
+  background : rgb(69, 123, 157);
+  height : 7px;
+}
+.al-fr-con {
+  padding-left : 3rem;
+}
+.al-col-gap {
+  padding-left : 0;
+}
+.logo {
+  margin-left : 3rem;
+  padding-left : 3rem;
+}
+.al-row {
+  justify-content : space-between;
+}
+.al_opt {
+  margin-left : -8px;
+  margin-top : 2px;
+}
+.al_font {
+  font-family : "ProductSans";
+  font-size : 18px;
+  font-weight : bold;
+  padding-left : 0;
+}
+.al-nav-gap {
+  margin-left : 0.5rem;
+}
+.al_font3 {
+  font-family : "ProductSans";
+  font-size : 15px;
+  font-weight : bold;
+  text-decoration : none;
+}
+.al_font2 {
+  font-family : "ProductSans";
+  font-size : 30px;
+  font-weight : bold;
+  text-decoration : none;
+}
+.al-adj {
+  margin-top : 10px;
+}
+.al-mar2 {
+  margin-top : 24px;
+}
+.al-mar3 {
+  margin-top : -25px;
+}
+.al_gap {
+  letter-spacing : 1.5px;
+}
+.al_gap2 {
+  letter-spacing : 1px;
+}
+.ban-cont {
+  height : 720px;
+  overflow : hidden;
+}
+.al-img-ban {
+  width : 100vw;
+  height : 100%;
+}
+.al-card {
+  margin-top : 3rem;
+}
+.al-flex {
+  margin-top : 3rem;
+}
+.al-col {
+  padding-left : 3rem;
+}
+.al-mar4 {
+  margin-top : 11.6rem;
+  padding-left : 1.5rem;
+}
+.al-img-fluid3 {
+  width : 88%;
+}
+.al-overlay {
+  background-color : #457b9ded;
+  width : 100%;
+  position : absolute;
+  padding-left : 3rem;
+}
+.al-ban-head {
+  font-size : 30px;
+  font-family : "Poppins";
+  letter-spacing : 0.5px;
+}
+.al-ban-para {
+  padding-right : 22rem;
+}
+.al-ban-text {
+  font-size : 43px;
+  font-family : "Poppins";
+  font-weight : 600;
+  letter-spacing : 1px;
+  padding-right : 20rem;
+  line-height : 1;
+}
+.al-ban-text2 {
+  font-size : 20px;
+  font-family : "Poppins";
+  font-weight : 500;
+  letter-spacing : 1.2px;
+}
+.al-btn {
+  font-weight : bold;
+  font-family : "Poppins";
+  font-size : 15px;
+  width : 65%;
+  border : none;
+  transition : all 0.5s ease;
+}
+  .btn : hover {
+  color : white;
+  background-color : black;
+}
+.al-form {
+  background-color : #f8f4b5;
+  margin-top : 65px;
+  margin-left : 9%;
+  position : relative;
+}
+.al-border {
+  border : 3px solid rgba(69, 123, 157, 0.619);
+  padding-left : 3rem;
+  padding-right : 1.5rem;
+}
+.al-form-text {
+  font-size : 22px;
+  font-family : "Poppins";
+  font-weight : bold;
+  letter-spacing : 0.5px;
+}
+.al-form-text2 {
+  font-size : 24px;
+  font-family : "Poppins";
+  margin-top : -8px;
+  font-weight : bold;
+  letter-spacing : 0.5px;
+}
+.al-form-font {
+  font-family : "Poppins";
+  font-size : 12px;
+  font-weight : bold;
+  letter-spacing : 0.5px;
+  height : 40px;
+}
+.al-form-btn {
+  font-family : "Poppins";
+  font-size : 12px;
+  letter-spacing : 0.5px;
+}
+.al-img-overlay {
+  position : absolute;
+  bottom : 0;
+  left : -395px;
+}
+.al-img-pos {
+  position : absolute;
+  top : 30px;
+  left : 105px;
+}
+.al-grp {
+  font-family : "Poppins";
+  letter-spacing : 0.5px;
+}
+.gides {
+  max-width : 100%;
+  display : grid;
+  grid-template-columns : repeat(auto-fit, minmax(min(270px, 8rem), 1fr));
+  gap : 1.5rem;
+  margin : 0 auto;
+  width : calc(100vw - 6vmin);
+}
+.gides3 {
+  max-width : 100%;
+  display : grid;
+  grid-template-columns : repeat(auto-fit, minmax(min(270px, 8rem), 1fr));
+  gap : 1.5rem;
+  margin : 0 auto;
+  width : calc(100vw - 6vmin);
+}
+.grid {
+  text-align : center;
+  padding : 30px;
+}
+.al-border2 {
+  border : 3px solid rgba(69, 123, 157);
+  z-index : 99999;
+}
+.al-head1 {
+  font-family : "Poppins";
+  font-weight : bolder;
+  letter-spacing : 1px;
+}
+.al-exp-row {
+  margin-left : 3rem;
+  padding-left : 3rem;
+}
+.al-exp-row2 {
+  margin-left : 3rem;
+  padding-left : 3rem;
+  margin-top : 3rem;
+}
+.al-fam-img {
+  margin-left : 3rem;
+}
+.al-fam-con {
+  padding-top : 1.5rem;
+  margin-top : 3rem;
+}
+.al-res-img {
+  margin-right : 1rem;
+}
+.al-fam-gap2 {
+  padding-top : 3rem;
+  margin-top : 1.5rem;
+  margin-left : 1.5rem;
+}
+.al-overlay2 {
+  position : absolute;
+  background : #A9DBDC;
+  width : 11rem;
+  height : 520px;
+  top : 100px;
+  left : -20px;
+  z-index : -1;
+}
+.al-overlay3 {
+  position : absolute;
+  background : white;
+  width : 8rem;
+  top : 80px;
+  left : 350px;
+  z-index : 999;
+}
+.al-text {
+  z-index : 9999;
+  font-family : "Poppins";
+  letter-spacing : 0.5px;
+  padding-top : 3rem;
+}
+.al-wes-text {
+  z-index : 9999;
+  font-family : "Poppins";
+  letter-spacing : 0.5px;
+  margin-top : 3rem;
+  margin-left : 1.5rem;
+  padding-top : 3rem;
+}
+.al-wes-gap {
+  margin-top : 3rem;
+  padding-top : 3rem;
+}
+.al-wes-head {
+  text-align : left;
+}
+.al-text2 {
+  z-index : 9999;
+  font-family : "Poppins";
+  letter-spacing : 0.5px;
+  margin-top : 3rem;
+  padding-top : 3rem;
+  text-align : right;
+}
+.al-para {
+  font-size : 15px;
+  font-weight : 500;
+  letter-spacing : 1px;
+  padding-right : 1.5rem;
+  margin-right : 1.5rem;
+}
+.al-para6 {
+  font-size : 15px;
+  font-weight : 500;
+  letter-spacing : 1px;
+  padding-right : 1.5rem;
+  padding-left : 3rem;
+}
+.al-res-gap2 {
+  margin-right : 0;
+  margin-top : 1.5rem;
+}
+.al-text3 {
+  font-size : 20px;
+  font-weight : bold;
+}
+.al-ul-m {
+  margin-left : 60px;
+}
+.al-text4 {
+  font-size : 15px;
+}
+.btn-bg {
+  background : #8dc9ee;
+  color : white;
+  font-weight : normal;
+  margin-top : 3rem;
+  margin-left : 1.5rem;
+}
+.al-res-row {
+  margin-top : 3rem;
+  margin-right : 3rem;
+  padding-right : 3rem;
+}
+.al-res-con {
+  padding-top : 3rem;
+  margin-top : 3rem;
+}
+.al-res-text3 {
+  font-size : 20px;
+  font-weight : bold;
+  margin-right : 1.5rem;
+}
+.al-res-gap {
+  margin-right : 1rem;
+}
+.al-res-flex2 {
+  margin-right : 1.5rem;
+}
+.btn-bg6 {
+  background : #A62F03;
+  color : #F2CB07;
+  font-weight : normal;
+  margin-top : 3rem;
+  margin-right : 1.5rem;
+}
+.al-overlay4 {
+  position : absolute;
+  background : #A9DBDC;
+  width : 11rem;
+  height : 530px;
+  top : 100px;
+  left : 300px;
+  z-index : -1;
+}
+.al-overlay5 {
+  position : absolute;
+  background : white;
+  width : 7rem;
+  top : 80px;
+  left : -10px;
+  z-index : 999;
+}
+.al-list {
+  font-size : 15px;
+  padding : 0;
+  margin-right : 1rem;
+}
+.al-list3 {
+  font-size : 15px;
+  padding : 0;
+  margin-right : 1rem;
+  margin-left : 3.5rem;
+}
+.al-con {
+  max-width : 92%;
+  height : 856px;
+  background : rgb(69, 123, 157);
+  border-top-left-radius : 115px;
+  margin-top : 8rem;
+}
+.al-pos {
+  position : relative;
+}
+.al-img-fluid2 {
+  width : 80%;
+  display : block;
+  position : absolute;
+  top : 90px;
+  left : -158px;
+}
+.al-head2 {
+  font-family : "Poppins";
+  letter-spacing : 1px;
+  font-size : 44px;
+  padding-right : 3rem;
+  margin-right : 3rem;
+}
+.al-alhead2 {
+  font-family : "Poppins";
+  letter-spacing : 1px;
+  font-size : 44px;
+  padding-right : 3rem;
+  margin-right : 3rem;
+}
+.al-pos2 {
+  margin-left : -110px;
+  margin-top : 80px;
+  padding-top : 3rem;
+}
+.al-para2 {
+  font-family : "Poppins";
+  letter-spacing : 0.5px;
+}
+.al-alpara2 {
+  font-family : "Poppins";
+  letter-spacing : 0.5px;
+  padding-right : 3rem;
+  margin-right : 1rem;
+}
+.btn-bg2 {
+  color : #F2B90C;
+  background : white;
+  font-family : "Poppins";
+  font-weight : bold;
+  letter-spacing : 1px;
+}
+.al-para3 {
+  font-size : 15px;
+  font-family : "Poppins";
+  padding-right : 1rem;
+}
+.al-alcon {
+  padding-top : 3rem;
+}
+.al-alimg {
+  margin-right : 1.5rem;
+}
+.al-alpad {
+  margin-left : 1.5rem;
+}
+.al-alpad2 {
+  margin-left : 1.5rem;
+  padding-right : 3rem;
+}
+.al-alpad3 {
+  margin-left : 1.5rem;
+  padding-right : 1.5rem;
+}
+.al-img-pos2 {
+  width : 55%;
+  position : absolute;
+  top : 5rem;
+}
+.al-img-pos3 {
+  width : 40%;
+  position : absolute;
+  top : 12rem;
+  left : 22rem;
+}
+.al-img-pos4 {
+  width : 55%;
+  position : absolute;
+  top : 27.5rem;
+}
+.al-img-pos5 {
+  position : absolute;
+  z-index : -1;
+  top : 4rem;
+  left : -1rem;
+}
+.al-img-pos6 {
+  position : absolute;
+  width : 15%;
+  top : 6.4rem;
+  left : 23rem;
+}
+.al-head4 {
+  font-family : "Poppins";
+  letter-spacing : 1px;
+}
+.al-grp5 {
+  font-family : "Poppins";
+  letter-spacing : 0.5px;
+}
+.al-leg-gap {
+  margin-top : 3rem;
+  padding-top : 3rem;
+}
+.al-head3 {
+  font-family : "Poppins";
+  letter-spacing : 1px;
+}
+.al-img {
+  width : 60%;
+}
+.txt-col {
+  color : #024e7e;
+}
+.al-grp2 {
+  font-family : "Poppins";
+  font-size : 28px;
+  letter-spacing : 1px;
+}
+.al-grp3 {
+  font-family : "Poppins";
+  font-size : 14px;
+  letter-spacing : 0.5px;
+  font-weight : bold;
+}
+.btn-bg3 {
+  background : #D4C2AD;
+  color : white;
+  width : 24rem;
+  font-family : "Poppins";
+  letter-spacing : 0.5px;
+  padding-left : 1.5rem;
+  padding-right : 1.5rem;
+}
+.al-border3 {
+  border : 3px solid rgb(2, 78, 126);
+}
+.al-border4 {
+  border : 3.5px solid rgb(2, 78, 126);
+}
+.al-test-gap {
+  margin-top : 3rem;
+}
+.al-test-gap2 {
+  margin-left : 3rem;
+}
+.al-test-gap3 {
+  padding-top : 1.5rem;
+}
+.al-pos3 {
+  position : absolute;
+  background : white;
+  top : -1rem;
+  left : -1rem;
+  height : 4rem;
+}
+.al-pos4 {
+  position : absolute;
+  background : white;
+  bottom : -1rem;
+  right : -1rem;
+  height : 4rem;
+}
+.al-test-flex {
+  padding-left : 3rem;
+}
+.al-img-2 {
+  width : 40%;
+}
+.al-grp4 {
+  font-family : "Poppins";
+  font-size : 14px;
+  font-weight : bold;
+  letter-spacing : 0.5px;
+  line-height : 1.8;
+}
+.al-img-3 {
+  margin-left : -78px;
+}
+.al-font {
+  font-family : "Poppins";
+  letter-spacing : 0.5px;
+}
+.al-margin {
+  margin-right : 3px;
+}
+.al-margin2 {
+  margin-left : -40px;
+}
+.al-con2 {
+  overflow : hidden;
+  margin-top : 5.5rem;
+  height : 640px;
+}
+.al-serv {
+  margin-top : 3rem;
+}
+.al-serv2 {
+  margin-top : 1rem;
+}
+.serv-align {
+  margin-left : 1.5rem;
+}
+.serv-align2 {
+  margin-left : 1rem;
+}
+.al-serv-flex {
+  margin-left : 3rem;
+  margin-top : 1rem;
+  padding-left : 3rem;
+}
+.al-overlay6 {
+  background-color : rgba(159, 197, 253, 0.945);
+  width : 100%;
+  height : 100%;
+  position : absolute;
+  z-index : 99999;
+  left : 0;
+  top : 0;
+  border-top-left-radius : 100px;
+  border-bottom-right-radius : 100px;
+}
+.al-img-fluid4 {
+  width : 100%;
+  height : 640px;
+  display : block;
+  border-top-left-radius : 100px;
+  border-bottom-right-radius : 100px;
+}
+.al-head5 {
+  font-family : "Poppins";
+  letter-spacing : 1px;
+  margin-top : 5rem;
+}
+.btn-bg4 {
+  background : #680e02;
+  color : #eeeeee;
+  border : 2px solid white;
+  border-radius : 8px;
+  width : 13rem;
+  font-family : "Poppins";
+  font-size : 20px;
+  letter-spacing : 0.5px;
+}
+.btn-bg5 {
+  background : w#E0E2D7;
+  color : rgb(26, 150, 228);
+  font-family : "Poppins";
+  letter-spacing : 0.5px;
+  margin-top : 3rem;
+}
+.gides2 {
+  display : grid;
+  grid-template-columns : repeat(auto-fit, minmax(min(270px, 8rem), 1fr));
+  gap : 2rem;
+  margin : 0 auto;
+  width : 85%;
+}
+.grid2 {
+  text-align : left;
+  border-radius : 8px;
+}
+.al-img-4 {
+  width : 100%;
+}
+.al-leg-gap2 {
+  padding-top : 3rem;
+}
+.al-leg-gap3 {
+  margin-top : 3rem;
+}
+.al-head6 {
+  font-family : "Poppins";
+  letter-spacing : 0.5px;
+  font-weight : bold;
+}
+.al-para4 {
+  font-family : "Poppins";
+  letter-spacing : 0.5px;
+  font-size : 20px;
+  line-height : 1.4;
+}
+.al-para5 {
+  font-family : "Poppins";
+  letter-spacing : 0.5px;
+  font-size : 14px;
+  padding-right : 1.5rem;
+  font-weight : bold;
+}
+.al-text5 {
+  font-family : "Poppins";
+  letter-spacing : 0.6px;
+  font-size : 14px;
+  color : rgb(69, 123, 157);
+}
+.arr-icon {
+  font-size : 20px;
+  color : rgb(69, 123, 157);
+  margin-top : -0.5px;
+}
+.al-arr-con {
+  padding-top : 1.5rem;
+}
+.text2 {
+  text-decoration : none;
+}
+.arr-icon2 {
+  font-size : 20px;
+}
+.icon-ad {
+  width : 50px;
+  height : 50px;
+  border-radius : 50%;
+  background : rgb(69, 123, 157);
+  color : white;
+  padding : 13.5px;
+}
+.icon-ad2 {
+  width : 50px;
+  height : 50px;
+  border-radius : 50%;
+  color : rgb(236, 233, 42);
+  border : 2px solid rgb(220, 53, 69);
+  padding : 13.5px;
+}
+.al-con3 {
+  background : #012037;
+  padding-left : 3rem;
+  padding-right : 3rem;
+  padding-top : 3rem;
+}
+.al-ft-flex {
+  padding-left : 1.5rem;
+  padding-right : 1.5rem;
+}
+.al-ft-row {
+  padding-left : 3rem;
+  padding-right : 3rem;
+}
+.f-icon {
+  font-size : 14px;
+}
+.icon2 {
+  width : 30px;
+  height : 30px;
+  border-radius : 50%;
+  color : #012037;
+  background : white;
+  padding : 3px 11px;
+}
+.icon3 {
+  width : 30px;
+  height : 30px;
+  border-radius : 50%;
+  color : #012037;
+  background : white;
+  padding : 2px 9.5px;
+}
+.icon4 {
+  width : 30px;
+  height : 30px;
+  border-radius : 50%;
+  color : #012037;
+  background : white;
+  padding : 2px 9px;
+}
+.foot-font {
+  font-family : "Poppins";
+  letter-spacing : 1px;
+}
+.al-list2 {
+  list-style : none;
+  line-height : 36px;
+  font-size : 15px;
+}
+.al-list2 li a {
+  text-decoration : none;
+  color : white;
+}
+.foot-font2 {
+  font-family : "Poppins";
+  letter-spacing : 0.5px;
+}
+.copyright {
+  position : relative;
+}
+  .copyright : :before {
+  content : "";
+  width : 30%;
+  height : 1.5px;
+  position : absolute;
+  top : 10px;
+  left : 60px;
+  background : white;
+}
+  .copyright : :after {
+  content : "";
+  width : 30%;
+  height : 1.5px;
+  position : absolute;
+  top : 10px;
+  right : 60px;
+  background : white;
+}
+.txt2 {
+  text-decoration : none;
+}
+  @media screen and (max-width : 1140px) and (min-width : 992px) {
+  .logo{margin-left : 0;
+  padding-left : 1rem;
+}
+.al_font {
+  font-size : 15px;
+  font-weight : 500;
+}
+.al_font2 {
+  font-size : 28px;
+}
+.al-mar3 {
+  margin-left : 10px;
+}
+.al-mar2 {
+  margin-left : 10px;
+}
+.al-img-wid {
+  width : 70%;
+}
+.al-img-ban {
+  height : 550px;
+}
+.ban-cont {
+  height : 550px;
+}
+.al-card {
+  margin-top : 0;
+}
+.al-flex {
+  margin-top : 0;
+}
+.al-mar4 {
+  margin-top : 4rem;
+  padding-left : 0;
+}
+.al-ban-head {
+  font-size : 24px;
+}
+.al-ban-text {
+  font-size : 40px;
+  padding-right : 0;
+}
+.al-ban-text2 {
+  font-size : 18px;
+}
+.al-ban-para {
+  padding-right : 8rem;
+}
+.al-form {
+  width : 30%;
+  margin-top : 26px;
+}
+.al-form-text {
+  font-size : 20px;
+}
+.al-form-text2 {
+  font-size : 20px;
+}
+.al-img-fluid3 {
+  width : 60%;
+}
+.al-img-overlay {
+  left : -235px;
+}
+.al-col {
+  padding-left : 0;
+}
+.al-btn {
+  width : 100%;
+}
+.al-img-pos {
+  left : 45px;
+  width : 35%;
+}
+.gides {
+  width : calc(90vw - 6vmin);
+}
+.al-grid-img {
+  width : 60%;
+}
+.al-grp {
+  font-size : 30px;
+}
+.al-tag {
+  font-size : 16px;
+}
+.al-fam-img {
+  margin-left : 0;
+}
+.al-text {
+  margin-top : 0;
+  padding-top : 1.5rem;
+  margin-left : -20px;
+}
+.al-text2 {
+  margin-left : 3rem
+}
+.btn-bg {
+  margin-left : 0;
+  margin-top : 1.5rem;
+}
+.btn-bg6 {
+  margin-top : 1.5rem;
+}
+.al-alpad {
+  padding-left : 1rem;
+}
+.al-res-gap {
+  margin-right : 0;
+}
+.al-wes-text {
+  margin-left : 0;
+  padding-right : 0;
+}
+.al-para6 {
+  padding-left : 1rem;
+}
+.al-para {
+  margin-right : 0;
+}
+.al-overlay2 {
+  left : -40px;
+  top : 70px;
+  height : 360px;
+  width : 8rem;
+}
+.al-overlay3 {
+  left : 215px;
+}
+.al-text4 {
+  font-size : 14px;
+  line-height : 1.6;
+}
+.al-overlay4 {
+  top : 70px;
+  left : 150px;
+  height : 360px;
+}
+.al-overlay5 {
+  left : -45px;
+}
+.al-list {
+  font-size : 14px;
+  line-height : 1.6;
+}
+.al-img-pos3 {
+  width : 37%;
+  top : 32.5rem;
+  left : 16rem;
+}
+.al-img-pos2 {
+  width : 95%;
+  top : 5rem;
+}
+.al-img-pos4 {
+  width : 55%;
+  top : 32.5rem;
+}
+.al-alhead2 {
+  font-size : 30px;
+}
+.al-alpara2 {
+  font-size : 15px;
+}
+.al-para3 {
+  font-size : 14px;
+}
+.al-alpad2 {
+  margin-left : 2.5rem
+}
+.al-alpad3 {
+  margin-left : 2.5rem
+}
+.al-con {
+  height : 740px;
+}
+.al-img-fluid2 {
+  width : 130%;
+  left : -95px;
+}
+.al-pos2 {
+  margin-left : 20rem;
+  margin-top : 50px;
+}
+.al-head2 {
+  font-size : 30px;
+}
+.al-para2 {
+  font-size : 14px;
+}
+.btn-bg2 {
+  font-size : 14px;
+}
+.al-alimg {
+  margin-right : 0.5rem;
+}
+.al-head4 {
+  font-size : 19px;
+}
+.al-img-pos6 {
+  top : 44.8rem;
+  left : 10.2rem;
+  transform : scaleX(-1);
+  rotate : -119.5deg;
+}
+.al-grp2 {
+  font-size : 20px;
+}
+.txt-col {
+  font-size : 18px;
+}
+.al-grp5 {
+  font-size : 18px;
+}
+.al-grp3 {
+  font-weight : normal;
+  font-size : 13px;
+}
+.al-test-img {
+  margin-left : -70px;
+}
+.al-font {
+  margin-left : 20px;
+  font-size : 18px;
+}
+.al-test-flex {
+  padding-left : 1.7rem;
+}
+.al-head5 {
+  margin-top : 2rem;
+}
+.btn-bg4 {
+  width : 9rem;
+  font-size : 12px;
+}
+.al-serv {
+  margin-top : 2rem;
+}
+.btn-bg5 {
+  font-size : 15px;
+  margin-top : 2rem;
+}
+.al-con2 {
+  height : 500px;
+}
+.al-img-fluid4 {
+  height : 500px;
+}
+.al-head6 {
+  font-size : 15px;
+}
+.al-para4 {
+  font-size : 18px;
+}
+.al-para5 {
+  padding-right : 0;
+  font-weight : normal;
+}
+.al-con3 {
+  padding-left : 0;
+  padding-right : 0;
+}
+.al-ft-img {
+  width : 70%;
+}
+.al-ft-flex {
+  padding-left : 1rem;
+  padding-right : 1rem;
+}
+.al-ft-box {
+  width : 22%;
+}
+.al-ft-gap {
+  margin-left : 15px;
+}
+.foot-font2 {
+  font-size : 15px;
+}
+  .copyright : :before {
+  width : 23.5%;
+}
+  .copyright : :after {
+  width : 23.5%;
+}
+  }@media screen and (max-width : 991px) and (min-width : 768px) {
+  .logo{margin-left : -100px;
+  padding-left : 0;
+}
+.al-img-wid {
+  width : 54%;
+}
+.al_gap {
+  letter-spacing : 1px;
+}
+.al-nav-gap {
+  margin-left : 0;
+}
+.al_opt {
+  margin-left : 8px;
+}
+.al_font {
+  font-size : 16px;
+}
+.al-row {
+  justify-content : normal;
+}
+.al-mar2 {
+  margin-left : -8px;
+}
+.al-mar3 {
+  margin-left : -8px;
+}
+.al-img-ban {
+  height : 550px;
+}
+.ban-cont {
+  height : 520px;
+}
+.al-card {
+  margin-top : 0;
+}
+.al-flex {
+  margin-top : 0;
+}
+.al-mar4 {
+  margin-top : 4rem;
+  padding-left : 0;
+}
+.al-ban-head {
+  font-size : 18px;
+}
+.al-ban-text {
+  font-size : 30px;
+  padding-right : 10px;
+}
+.al-ban-text2 {
+  font-size : 14px;
+}
+.al-ban-para {
+  padding-right : 3rem;
+  font-size : 13px;
+}
+.al-form {
+  margin-top : 5px;
+  margin-left : 0;
+  margin-right : 40px;
+}
+.al-border {
+  padding-left : 1.5rem;
+  padding-right : 1.5rem;
+}
+.al-form-text {
+  font-size : 18px;
+}
+.al-form-text2 {
+  font-size : 18px;
+}
+.al-img-fluid3 {
+  display : none;
+}
+.al-img-overlay {
+  left : -235px;
+}
+.al-col {
+  padding-left : 0;
+}
+.al-btn {
+  width : 82%;
+  font-size : 14px;
+}
+.al-img-pos {
+  left : 35px;
+  width : 36%;
+  top : 36px;
+}
+.grid {
+  padding : 15px;
+}
+.gides {
+  width : calc(90vw - 6vmin);
+}
+.al-grid-img {
+  width : 60%;
+}
+.al-grp {
+  font-size : 26px;
+}
+.al-tag {
+  font-size : 15px;
+}
+.al-fam-img {
+  margin-left : -40px;
+}
+.al-overlay2 {
+  left : -75px;
+  top : 60px;
+  height : 270px;
+  width : 5.5rem;
+}
+.al-overlay3 {
+  left : 110px;
+  top : 50px;
+}
+.al-text {
+  padding-left : 0;
+  margin-left : -50px;
+  margin-top : 0;
+}
+.al-text4 {
+  font-size : 14px;
+  line-height : 1.6;
+}
+.al-overlay4 {
+  top : 60px;
+  left : 170px;
+  height : 270px;
+  width : 6rem;
+}
+.al-overlay5 {
+  top : 50px;
+  left : -40px;
+}
+.al-para6 {
+  font-size : 13px;
+  padding-right : 0;
+  padding-left : 1rem;
+}
+.al-list {
+  font-size : 13px;
+  line-height : 1.8;
+}
+.al-img-pos3 {
+  width : 95%;
+  top : 35rem;
+  left : 0;
+}
+.al-img-pos2 {
+  width : 95%;
+  top : 5rem;
+}
+.al-img-pos4 {
+  width : 95%;
+  top : 22rem;
+}
+.al-fam-gap {
+  padding-right : 0;
+  padding-left : 0;
+}
+.al-fam-gap2 {
+  padding-top : 0;
+  margin-top : 1rem;
+  font-size : 30px;
+  margin-left : 1rem;
+}
+.al-para {
+  font-size : 13px;
+  padding-right : 0;
+  margin-left : 0;
+  margin-right : 0;
+}
+.al-text3 {
+  font-size : 18px;
+  margin-left : 0;
+}
+.al-fam-flex2 {
+  margin-left : 0;
+}
+.al-text4 {
+  font-size : 13px;
+  line-height : 1.8;
+}
+.al-fam-con {
+  padding-top : 0;
+}
+.btn-bg {
+  margin-top : 1rem;
+  margin-left : 0;
+}
+.al-text2 {
+  margin-top : 3rem;
+  padding-top : 1rem;
+}
+.al-res-row {
+  margin-top : 0;
+}
+.al-res-con {
+  padding-top : 3rem;
+}
+.al-res-text3 {
+  font-size : 18px;
+  margin-right : -1rem;
+}
+.al-res-flex2 {
+  margin-right : -1rem;
+}
+.btn-bg6 {
+  margin-top : 1rem;
+  margin-right : 0;
+}
+.al-res-img {
+  margin-left : 30px;
+  margin-right : 0;
+}
+.al-res-gap {
+  margin-right : 0;
+  padding-left : 0;
+  padding-right : 0;
+}
+.al-res-gap2 {
+  font-size : 30px;
+  margin-top : 0;
+  margin-right : -30px;
+}
+.al-res-adg {
+  margin-right : -1rem;
+}
+.al-wes-text {
+  margin-left : -50px;
+  padding-top : 0;
+  padding-right : 0;
+}
+.al-img-fluid2 {
+  left : -90px;
+}
+.al-leg-card {
+  margin-left : 240px;
+}
+.al-head2 {
+  font-size : 24px;
+}
+.al-para2 {
+  font-size : 12px;
+  margin-right : 0;
+}
+.al-pos2 {
+  margin-left : 0;
+  margin-top : 50px;
+}
+.btn-bg2 {
+  font-size : 13px;
+}
+.al-con {
+  height : 650px;
+}
+.al-para3 {
+  font-size : 13px;
+}
+.al-alhead2 {
+  font-size : 26px;
+}
+.al-alpara2 {
+  font-size : 14px;
+}
+.al-head4 {
+  font-size : 19px;
+}
+.al-alpad2 {
+  margin-left : 0.5rem;
+}
+.al-alpad3 {
+  margin-left : 0.5rem;
+}
+.al-alimg {
+  margin-right : 0.5rem;
+}
+.al-alpad {
+  margin-left : 0.5rem;
+}
+.al-img-pos6 {
+  display : none;
+}
+.al-head3 {
+  margin-top : 4rem;
+}
+.al-grp2 {
+  font-size : 16px;
+}
+.txt-col {
+  font-size : 14px;
+}
+.al-grp5 {
+  font-size : 18px;
+}
+.al-grp3 {
+  font-size : 12px;
+  font-weight : normal;
+}
+.al-grp4 {
+  font-size : 12px;
+  font-weight : 500;
+}
+.al-test-img {
+  margin-left : -70px;
+}
+.al-font {
+  margin-left : 26px;
+  font-size : 18px;
+}
+.al-test-flex {
+  padding-left : 2.5rem;
+}
+.al-test-flex2 {
+  padding-left : 3rem;
+}
+.al-con2 {
+  height : 500px;
+}
+.al-img-fluid4 {
+  height : 500px;
+}
+.al-head5 {
+  margin-top : 2rem;
+}
+.al-serv {
+  margin-top : 2rem;
+}
+.btn-bg5 {
+  font-size : 14px;
+  margin-top : 2rem;
+}
+.btn-bg4 {
+  width : 7rem;
+  font-size : 10px;
+}
+.al-serv-flex {
+  margin-left : 0;
+}
+.gides2 {
+  width : calc(90vw - 6vmin);
+}
+.al-leg-img {
+  height : 5%;
+  margin-top : 3px;
+}
+.al-head6 {
+  font-size : 13px;
+  font-weight : normal;
+}
+.al-para4 {
+  font-size : 15px;
+}
+.al-para5 {
+  font-size : 12px;
+  font-weight : normal;
+}
+.al-ft-img {
+  width : 70%;
+}
+.al-ft-flex {
+  padding-left : 0;
+  padding-right : 0;
+}
+.al-ft-box {
+  width : 22%;
+}
+.al-ft-gap {
+  margin-left : 15px;
+}
+.al-ft-row {
+  padding-left : 0;
+  padding-right : 0;
+}
+.al-ft-cap {
+  font-size : 18px;
+}
+.al-ft-cap2 {
+  font-size : 13px;
+}
+.al-ft-cap3 {
+  font-size : 15px;
+}
+.foot-font2 {
+  font-size : 13px;
+}
+  .copyright : :before {
+  width : 23.5%;
+}
+  .copyright : :after {
+  width : 23.5%;
+}
+  .copyright : :before {
+  left : 0;
+}
+  .copyright : :after {
+  right : 0;
+}
+  }@media screen and (max-width : 410px) and (min-width : 320px) {
+  .logo{margin-left : -10px;
+  padding-left : 0;
+  margin-top : 1rem;
+}
+.al-img-wid {
+  width : 90%;
+}
+.al-col-gap {
+  padding-top : 0.4rem;
+}
+.al-fr-con {
+  padding-left : 1rem;
+}
+.al_font3 {
+  font-size : 11px;
+  font-weight : normal;
+}
+.al_font2 {
+  font-size : 20px;
+  font-weight : normal;
+}
+.al-cl-img {
+  width : 80%;
+  margin-left : 5px;
+  margin-top : -10px;
+}
+  }@media screen and (max-width : 539px) and (min-width : 411px) {
+  .logo{margin-left : -10px;
+  padding-left : 0;
+  margin-top : 0rem;
+}
+.al-img-wid {
+  width : 90%;
+}
+.al-fr-con {
+  padding-left : 1rem;
+}
+.al-row {
+  justify-content : space-between;
+}
+.al-col-row {
+  padding-top : 0.6rem;
+}
+.al-cl-img {
+  width : 80%;
+  margin-left : 5px;
+  margin-top : -10px;
+}
+.al-col-gap {
+  padding-left : 2rem;
+  padding-top : 0.6rem;
+}
+.al_font {
+  padding-top : 0rem;
+  padding-left : 0.4rem;
+}
+.al_font3 {
+  font-size : 11px;
+  font-weight : normal;
+}
+.al_font2 {
+  font-size : 20px;
+  font-weight : normal;
+}
+  }@media screen and (max-width : 599px) and (min-width : 540px) {
+  .logo{margin-left : -10px;
+  padding-left : 0;
+  margin-top : 0rem;
+}
+.al-img-wid {
+  width : 90%;
+}
+.al-fr-con {
+  padding-left : 1rem;
+}
+.al-row {
+  justify-content : space-between;
+}
+.al-col-row {
+  padding-top : 0.6rem;
+}
+.al-col-gap {
+  padding-left : 3rem;
+  padding-top : 1rem;
+}
+.al-cl-img {
+  width : 80%;
+  margin-left : 5px;
+  margin-top : -10px;
+}
+.al_font {
+  padding-top : 0.8rem;
+  padding-left : 0.4rem;
+}
+.al_font3 {
+  font-size : 11px;
+  font-weight : normal;
+}
+.al_font2 {
+  font-size : 20px;
+  font-weight : normal;
+}
+  }@media screen and (max-width : 767px) and (min-width : 600px) {
+  .logo{margin-left : -10px;
+  padding-left : 0;
+  margin-top : 0rem;
+}
+.al-img-wid {
+  width : 90%;
+}
+.al-fr-con {
+  padding-left : 1rem;
+}
+.al-row {
+  justify-content : space-between;
+}
+.al-col-row {
+  padding-top : 0.6rem;
+}
+.al-col-gap {
+  padding-left : 3rem;
+  padding-top : 0.8rem;
+}
+.al_font {
+  padding-top : 0.3rem;
+  padding-left : 0.4rem;
+}
+.al_font3 {
+  font-size : 11px;
+  font-weight : normal;
+}
+.al_font2 {
+  font-size : 20px;
+  font-weight : normal;
+}
+.al-cl-img {
+  width : 60%;
+  margin-left : 15px;
+  margin-top : -10px;
+}
+  }@media screen and (max-width : 767px) and (min-width : 320px) {
+  .al-img-pos{left : 62px;
+  width : 35%;
+  top : 36px;
+}
+.grid {
+  padding : 15px;
+}
+.gides {
+  width : calc(80vw - 6vmin);
+  grid-template-columns : repeat(auto-fit, minmax(200px, 1fr));
+  margin : 0 auto;
+}
+.gides3 {
+  width : calc(90vw - 6vmin);
+  grid-template-columns : repeat(auto-fit, minmax(270px, 1fr));
+  margin : 0 auto;
+}
+.al-grid-img {
+  width : 50%;
+}
+.al-grp {
+  font-size : 30px;
+}
+.al-tag {
+  font-size : 18px;
+}
+  }@media screen and (max-width : 767px) and (min-width : 320px) {
+  .btn-bg3{width : 16rem;
+  font-size : 12px;
+  padding-left : 1rem;
+  padding-right : 1rem;
+}
+.al-head4 {
+  font-size : 16px;
+}
+.al-overlay {
+  padding-left : 1rem;
+  padding-right : 0;
+  padding-top : 0;
+}
+.al_gap {
+  letter-spacing : 1px;
+  margin-left : 1rem;
+}
+.al_font {
+  font-size : 16px;
+}
+.al-ul-nav {
+  width : 10rem;
+}
+.al-nav-gap {
+  margin-left : 0;
+}
+.al_opt {
+  margin-left : 8px;
+}
+.al-row {
+  justify-content : space-between;
+}
+.al-mar2 {
+  margin-left : -8px;
+}
+.al-mar3 {
+  margin-left : -8px;
+}
+.al-img-ban {
+  height : 100%;
+}
+.ban-cont {
+  height : 950px;
+}
+.al-card {
+  margin-top : 0;
+}
+.al-flex {
+  margin-top : 0;
+}
+.al-mar4 {
+  margin-top : 2rem;
+  padding-left : 0;
+}
+.al-ban-head {
+  font-size : 16px;
+}
+.al-ban-text {
+  font-size : 22px;
+  padding-right : 10px;
+}
+.al-ban-text2 {
+  font-size : 11px;
+}
+.al-ban-para {
+  padding-right : 1rem;
+  font-size : 15px;
+}
+.al-form {
+  width : 80%;
+  position : absolute;
+  left : 0.2rem;
+  bottom : 2rem;
+}
+.al-border {
+  padding-left : 1.5rem;
+}
+.al-form-text {
+  font-size : 18px;
+}
+.al-form-text2 {
+  font-size : 18px;
+}
+.al-img-fluid3 {
+  display : none;
+}
+.al-img-overlay {
+  left : -235px;
+}
+.al-col {
+  padding-left : 0;
+}
+.al-btn {
+  width : 100%;
+  font-size : 14px;
+  margin-left : -0.5rem;
+}
+.al-exp-row2 {
+  margin-left : 1rem;
+  padding-left : 3rem;
+  margin-top : 0;
+}
+.al-fam-img {
+  margin-left : -40px;
+}
+.al-overlay2 {
+  left : -75px;
+  top : 60px;
+  height : 280px;
+  width : 5.5rem;
+  display : none;
+}
+.al-overlay3 {
+  left : 110px;
+  top : 50px;
+  display : none;
+}
+.al-exp-row {
+  margin-left : 1rem;
+  padding-left : 3rem;
+}
+.al-text {
+  padding-left : 0;
+  margin-left : -35px;
+  margin-top : 0;
+  padding-top : 1rem;
+  text-align : center;
+}
+.al-overlay4 {
+  display : none;
+}
+.al-overlay5 {
+  display : none;
+}
+.al-para6 {
+  font-size : 14px;
+  padding-right : 0;
+  padding-left : 1rem;
+}
+.al-list {
+  font-size : 15px;
+  line-height : 2;
+  padding-right : 1rem;
+  margin-bottom : 0;
+  padding-left : 0;
+  margin-right : 3rem;
+}
+.al-list3 {
+  font-size : 15px;
+  line-height : 2;
+  padding-right : 1rem;
+  margin-bottom : 0;
+  padding-left : 0;
+  margin-right : 3rem;
+}
+.al-img-pos3 {
+  width : 40%;
+  top : 6rem;
+  left : 0.3rem;
+  position : inherit;
+}
+.al-img-pos2 {
+  width : 55%;
+  top : 2rem;
+  position : inherit;
+}
+.al-img-pos4 {
+  width : 55%;
+  top : 1.5rem;
+  left : 0;
+  position : inherit;
+}
+.al-img-pos5 {
+  position : inherit;
+  z-index : -1;
+  top : -10.6rem;
+  left : -10.3rem;
+  width : 20%;
+}
+.al-fam-gap {
+  padding-right : 0;
+  padding-left : 0;
+}
+.al-fam-gap2 {
+  padding-top : 0;
+  margin-top : 1rem;
+  font-size : 26px;
+  margin-left : 0;
+  text-align : left;
+}
+.al-para {
+  font-size : 14px;
+  padding-right : 0;
+  margin-left : 0;
+  margin-right : 0;
+  text-align : left;
+}
+.al-text3 {
+  font-size : 16px;
+  margin-left : 0;
+  text-align : left;
+}
+.al-fam-flex2 {
+  margin-left : 0;
+  flex-direction : column;
+}
+.al-ph-style {
+  flex-direction : column;
+  text-align : left;
+}
+.al-text4 {
+  font-size : 15px;
+  line-height : 2;
+  margin-bottom : 0;
+  margin-left : 0;
+  padding-left : 1rem;
+  text-align : left;
+}
+.al-fam-con {
+  padding-top : 0;
+  margin-top : 2rem;
+}
+.btn-bg {
+  margin-top : 2rem;
+  margin-left : 0;
+}
+.al-text2 {
+  margin-top : 3rem;
+  padding-top : 1rem;
+  text-align : center;
+}
+.al-res-row {
+  margin-top : 0;
+  padding-right : 0;
+  margin-right : 0;
+}
+.al-res-con {
+  padding-top : 0;
+  margin-top : 0;
+  padding-right : 0;
+}
+.al-res-text3 {
+  font-size : 16px;
+  margin-right : 1.5rem;
+  text-align : right;
+  margin-left : 1rem;
+}
+.al-res-flex2 {
+  margin-right : -1.6rem;
+  flex-direction : column;
+}
+.btn-bg6 {
+  margin-top : 2rem;
+  margin-right : 0;
+}
+.al-res-img {
+  margin-left : 0;
+  margin-right : 0;
+}
+.al-res-gap {
+  margin-right : 0;
+  padding-left : 2.5rem;
+  padding-right : 2.5rem;
+  margin-top : 3rem;
+  text-align : end;
+}
+.al-res-gap2 {
+  font-size : 26px;
+  margin-top : 0;
+  margin-right : 1.5rem;
+  text-align : right;
+}
+.al-res-adg {
+  margin-right : 1.5rem;
+  text-align : right;
+}
+.al-wes-text {
+  margin-left : -50px;
+  padding-top : 0;
+  padding-right : 0;
+  margin-top : 1rem;
+  text-align : center;
+}
+.al-wes-gap {
+  margin-top : 1rem;
+  padding-top : 2rem;
+}
+.al-img-fluid2 {
+  margin-top : 5rem;
+  position : inherit;
+  top : 0;
+  left : 0;
+}
+.al-pos {
+  padding-left : 0;
+}
+.al-leg-card {
+  margin-left : 0;
+}
+.al-head2 {
+  font-size : 20px;
+  padding-right : 0;
+  margin-right : 0;
+}
+.al-alhead2 {
+  font-size : 16px;
+  padding-right : 0;
+  margin-right : 0;
+}
+.al-para2 {
+  font-size : 14px;
+  margin-right : 0;
+  padding-right : 1rem;
+}
+.al-alpara2 {
+  font-size : 14px;
+  padding-right : 0;
+  margin-right : 0;
+}
+.al-pos2 {
+  margin-left : 0;
+  margin-top : 1rem;
+  padding-top : 1rem;
+}
+.btn-bg2 {
+  font-size : 11px;
+}
+.al-con {
+  height : 1200px;
+  overflow : hidden;
+  border-top-left-radius : 80px;
+}
+.al-alcon {
+  padding-top : 0;
+}
+.al-para3 {
+  font-size : 13px;
+}
+.al-alimg {
+  margin-right : 0.5rem;
+}
+.al-alpad {
+  margin-left : 0.5rem;
+}
+.al-alpad2 {
+  margin-left : 0.5rem;
+  padding-right : 1rem;
+}
+.al-alpad3 {
+  margin-left : 0.5rem;
+  padding-right : 0.5rem;
+}
+.al-img-pos6 {
+  display : none;
+  top : -15rem;
+  left : 10.3rem;
+  position : inherit;
+}
+.al-leg-gap {
+  margin-top : 1rem;
+  padding-top : 3rem;
+}
+.al-test-gap {
+  margin-top : 2rem;
+}
+.al-test-gap2 {
+  margin-left : 0;
+  margin-top : 2rem;
+}
+.al-test-gap3 {
+  padding-top : 0;
+}
+.al-level-img {
+  width : 20%;
+}
+.al-head3 {
+  margin-top : 0;
+  font-size : 18px;
+}
+.al-grp2 {
+  font-size : 16px;
+}
+.txt-col {
+  font-size : 14px;
+}
+.al-grp5 {
+  font-size : 18px;
+}
+.al-grp3 {
+  font-size : 12px;
+  font-weight : normal;
+}
+.al-grp4 {
+  font-size : 12px;
+  font-weight : 500;
+}
+.al-test-img {
+  margin-left : -70px;
+}
+.al-font {
+  margin-left : 15px;
+  font-size : 18px;
+}
+.al-test-flex {
+  padding-left : 1.8rem;
+}
+.al-test-flex2 {
+  padding-left : 3rem;
+}
+.al-con2 {
+  height : 1060px;
+  margin-top : 4rem;
+}
+.al-img-fluid4 {
+  height : 100%;
+  border-top-left-radius : 70px;
+  border-bottom-right-radius : 70px;
+}
+.al-overlay6 {
+  border-top-left-radius : 70px;
+  border-bottom-right-radius : 70px;
+}
+.al-head5 {
+  margin-top : 1rem;
+  font-size : 22px;
+}
+.al-serv {
+  margin-bottom : 0;
+  margin-top : 1rem;
+  flex-direction : column;
+}
+.btn-bg5 {
+  font-size : 14px;
+  margin-top : 2rem;
+}
+.btn-bg4 {
+  width : 12rem;
+  font-size : 14px;
+  margin-left : auto;
+  margin-right : auto;
+  margin-top : 1rem;
+}
+.al-serv-flex {
+  margin-left : 0;
+  flex-direction : column;
+  padding-left : 0;
+  margin-top : 0;
+}
+.al-serv2 {
+  margin-top : 0;
+  flex-direction : column;
+}
+.gides2 {
+  width : calc(90vw - 6vmin);
+  grid-template-columns : repeat(auto-fit, minmax(270px, 1fr));
+}
+.al-leg-img {
+  height : 5%;
+  margin-top : 2px;
+  width : 8%;
+}
+.al-leg-gap2 {
+  padding-top : 0;
+}
+.al-leg-gap3 {
+  margin-top : 2rem;
+}
+.al-head6 {
+  font-size : 14px;
+  font-weight : normal;
+  padding-left : 0.8rem;
+  padding-top : 0.2rem;
+}
+.al-arr-con {
+  padding-top : 0;
+}
+.al-para4 {
+  font-size : 15px;
+}
+.al-para5 {
+  font-size : 12px;
+  font-weight : normal;
+}
+.al-con3 {
+  padding-left : 2rem;
+  padding-right : 2rem;
+  padding-top : 2rem;
+}
+.al-ft-align {
+  text-align : center;
+}
+.al-ft-img {
+  width : 45%;
+}
+.al-ft-flex {
+  padding-left : 0;
+  padding-right : 0;
+  justify-content : center;
+}
+.al-ft-gap {
+  margin-left : 0;
+}
+.foot-font {
+  text-align : center;
+}
+.al-ft-top {
+  margin-top : 3rem;
+}
+.al-ft-top2 {
+  margin-top : 1rem;
+}
+.al-ft-spec {
+  justify-content : center;
+}
+.al-ft-row {
+  padding-left : 0;
+  padding-right : 0;
+}
+.al-ft-cap {
+  font-size : 18px;
+}
+.al-ft-cap2 {
+  font-size : 15px;
+}
+.al-ft-cap3 {
+  font-size : 15px;
+}
+.foot-font2 {
+  font-size : 13px;
+}
+  .copyright : :before {
+  display : none;
+}
+  .copyright : :after {
+  display : none;
+}
+}

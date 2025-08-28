@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjeta Digital - Lic. Al Ulises Azua</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            color: #C9EDED;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1000&q=80');
+            background-size: cover;
+            backdrop-filter: blur(4px);
+        }
+
+        .card {
+            max-width: 500px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            margin: auto;
+            padding: 20px;
+            border-radius: 25px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            overflow: hidden;
+            position: relative;
+            color: #fff;
+        }
+
+        .photo {
+            text-align: center;
+            margin-top: 10px;
+            position: relative;
+        }
+
+        .photo img {
+            border-radius: 50%;
+            width: 140px;
+            height: 140px;
+            object-fit: cover;
+            border: 4px solid white;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        h2,
+        h3 {
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .contact-grid a,
+        .contact-grid p {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 10px;
+            border-radius: 12px;
+            text-align: center;
+            color: #fff;
+            text-decoration: none;
+            font-size: 0.95rem;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease;
+        }
+
+        .contact-grid a:hover,
+        .contact-grid p:hover {
+            transform: translateY(-2px);
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .buttons a {
+            display: block;
+            text-align: center;
+            margin: 20px 0;
+            background: #00b4d8;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+            text-decoration: none;
+            box-shadow: 0 8px 10px rgba(0, 180, 216, 0.3);
+            transition: transform 0.8s ease;
+        }
+
+        .buttons a:hover {
+            transform: scale(1.03);
+        }
+
+        .map {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .qr {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .qr img {
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .gallery img {
+            width: 100px;
+            border-radius: 12px;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .social-icons a {
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.4rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h2>Lic. Al Ulises Azua Castellanos</h2>
+        <h3>Azua Mercado y Asociados Firma Legal</h3>
+
+        <div class="photo">
+            <img src="https://alulisesazua.wordpress.com/wp-content/uploads/2024/02/wordpress.jpg?w=202" alt="Perfil">
+        </div>
+
+        <div class="contact-grid">
+            <p>lic.azua@gmx</p>
+            <p>998 3963827</p>
+            <p>3337 785120</p>
+            <a href="https://azuaymercadoasociados.webnode.mx/" target="_blank">Azua Mercado y Asociados</a>
+            <a href="https://osint-utopia.github.io/osint-utopia/recursos.html" target="_blank">Osint Utopia</a>
+            <a href="https://www.linkedin.com/in/al-ulises-azua-b050685a" target="_blank">LinkedIn</a>
+            <a href="https://alulisesazua.wordpress.com/" target="_blank">Blog Uli Azua</a>
+            <a href="https://forensic-kggyz-hrbkd.pyxl.ai/" target="_blank">FORENSIC Dictaminación Pericial</a>
+            <a href="https://cienciacriminalistica.blogspot.com/" target="_blank">Criminalistica</a>
+            <a href="https://intelx.io/tools?tab=general" target="_blank">Intelx-IA</a>
+            <a href="index.html" target="_blank">Regresar Inicio</a>
+        </div>
+
+        <div class="social-icons">
+            <a href="https://intelx.io/tools?tab=general" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com/in/al-ulises-azua-b050685a" target="_blank"><i
+                    class="fab fa-linkedin-in"></i></a>
+            <a href="https://wa.me/5213337785120" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+
+        <div class="buttons"
+            style="text-align: center; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
+            <a href="mailto:lic.azua@gmx" style="width: 120px;"><i class="fas fa-envelope"></i></a>
+            <a href="tel:993963827" style="width: 120px;"><i class="fas fa-phone-alt"></i></a>
+            <a href="https://wa.me/5213337785120" style="width: 120px;"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.google.com/maps?q=21.164633,-86.826311" target="_blank" style="width: 120px;"><i
+                    class="fas fa-map-marker-alt"></i></a>
+            <a href="#" onclick="downloadVCard()" style="width: 120px;"><i class="fas fa-address-card"></i></a>
+        </div>
+
+        <div class="map">
+            <iframe src="https://www.google.com/maps?q=21.164633,-86.826311&z=15&output=embed" width="100%" height="200"
+                style="border:0;" allowfullscreen></iframe>
+        </div>
+
+        <div class="qr">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://azuaymercadoasociados.webnode.mx/&size=150x150"
+                alt="QR Tarjeta">
+        </div>
+
+        <div class="buttons">
+            <a href="#" onclick="mostrarSitioCompleto()"><i class="fas fa-door-open"></i> CONOCE MAS DE MI Y DE MI
+                TRABAJO</a>
+        </div>
+        <footer class="bg-white shadow-md p-4 text-center">
+            <p>&copy; 2025 Forensic | ®Lic. Azua | https//www.abogadosforenses.org</p>
+        </footer>
+    </div>
+
+    <script>
+        function downloadVCard() {
+            const vcard = `BEGIN:VCARD\nVERSION:3.0\nFN:Lic. Al Ulises Azua Castellanos\nORG:Azua Mercado y Asociados\nTEL;TYPE=CELL:993963827\nEMAIL:lic.azua@gmx\nURL:https://azuaymercadoasociados.webnode.mx/\nEND:VCARD`;
+            const blob = new Blob([vcard], { type: "text/vcard" });
+            const link = document.createElement("a");
+            link.href = URL.createObjectURL(blob);
+            link.download = "contacto.vcf";
+            link.click();
+        }
+    </script>
+    <section id="sitio" style="display: none;">
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="#" class="logo">Abogados Forenses</a>
+                <ul class="nav-menu">
+                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li><a href="#sobre-mi" class="nav-link">Sobre Mí</a></li>
+                    <li><a href="#especialidades" class="nav-link">Especialidades</a></li>
+                    <li><a href="#experiencia" class="nav-link">Experiencia</a></li>
+                    <li><a href="#certificaciones" class="nav-link">Certificaciones</a></li>
+                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <h1>Lic. Al Ulises Azúa Castellanos</h1>
+                <p>Abogado Litigante | Perito en Criminalística | Documentoscopía y Grafoscopía</p>
+                <a href="#sobre-mi" class="btn">Conoce mi Trayectoria</a>
+            </div>
+        </section>
+
+        <section id="sobre-mi" class="section">
+            <h2 class="section-title">Sobre Mí</h2>
+            <div class="about-grid">
+                <div class="about-image">
+                    <div class="profile-pic">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <h3>Perfil Profesional</h3>
+                    <p>Licenciado en Derecho con más de 25 años de experiencia en el ejercicio profesional,
+                        especializado en criminalística aplicada, documentoscopía y grafoscopía. Certificado como perito
+                        en múltiples estados de la República Mexicana.</p>
+
+                    <p>Mi trayectoria abarca desde la investigación criminal hasta la representación litigiosa en
+                        diversas materias del derecho, combinando el rigor académico con la experiencia práctica en el
+                        campo forense.</p>
+
+                    <div style="margin-top: 2rem;">
+                        <p><i class="fas fa-map-marker-alt" style="color: #EFEFEF; margin-right: 10px;"></i>
+                            Guadalajara, Jalisco</p>
+                        <p><i class="fas fa-graduation-cap" style="color: #EFEFEF; margin-right: 10px;"></i> Licenciado
+                            en Derecho + Especialidades Forenses</p>
+                        <p><i class="fas fa-certificate" style="color: #EFEFEF; margin-right: 10px;"></i> Perito
+                            Certificado en 5 Estados</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="specialties">
+                <div class="specialty-card">
+                    <i class="fas fa-balance-scale"></i>
+                    <h3>Servicios Legales</h3>
+                    <p>Representación litigiosa en materias penal, civil, mercantil, laboral y administrativa. Asesoría
+                        jurídica integral para personas físicas y morales.</p>
+                </div>
+                <div class="specialty-card">
+                    <i class="fas fa-search"></i>
+                    <h3>Peritajes Criminalísticos</h3>
+                    <p>Dictámenes especializados en criminalística de campo y gabinete, análisis de documentos
+                        cuestionados y estudios grafoscópicos.</p>
+                </div>
+                <div class="specialty-card">
+                    <i class="fas fa-user-secret"></i>
+                    <h3>Investigación Forense</h3>
+                    <p>Perfilación criminológica, análisis de psicopatías, investigación criminal por violencia de
+                        género y técnicas OSINT.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experiencia" class="section">
+            <h2 class="section-title">Experiencia Profesional</h2>
+            <div class="experience-timeline">
+                <div class="timeline-item">
+                    <h4>Director Jurídico - Azúa Mercado y Asociados</h4>
+                    <p class="period">Abril 1995 - Presente</p>
+                    <p>Administración y coordinación en materia legal. Representación litigiosa en áreas laboral,
+                        contractual, penal, civil, hipotecario especial y mercantil. Capacitación técnica de abogados.
+                    </p>
+                </div>
+
+                <div class="timeline-item">
+                    <h4>Docente - Universidad UTEG</h4>
+                    <p class="period">Enero 2020 - Presente</p>
+                    <p>Impartición de materias en derecho penal, civil, mercantil y constitucional. Formación de nuevas
+                        generaciones de abogados.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h4>Director Jurídico - Fundación Donde Riviera Maya</h4>
+                    <p class="period">Abril 2020 - Mayo 2022</p>
+                    <p>Coordinación legal y representación litigiosa. Asesoría en relaciones laborales y localización de
+                        bienes.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h4>Director Jurídico - Sistema DIF Tlaquepaque</h4>
+                    <p class="period">Octubre 2015 - Junio 2019</p>
+                    <p>Administración y dirección del equipo jurídico. Representación en juicios laborales,
+                        administrativos y contenciosos.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h4>Funcionario - Procuraduría General de la República</h4>
+                    <p class="period">1994 - 1998</p>
+                    <p>Funcion de administración en procesos federales.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="certificaciones" class="section">
+            <h2 class="section-title">Certificaciones y Diplomas</h2>
+            <p style="text-align: center; color: white; margin-bottom: 2rem; font-size: 1.1rem;">
+                <i class="fas fa-mouse-pointer" style="margin-right: 8px;"></i> Haz clic en cualquier certificación para
+                ver el diploma correspondiente
+            </p>
+            <div class="cert-item" onclick="openModal('Seguridad Pública en México', '1998', '')">
+                <h5>Seguridad Pública en México</h5>
+                <p>Universidad de Guadalajara</p>
+                <p class="cert-year">1998</p>
+            </div>
+            <div class="cert-item" onclick="openModal('Diplomado de Criminalística Aplicada', '1999', '')">
+                <h5>Diplomado de Criminalística Aplicada</h5>
+                <p>Procuraduría General de la República, Centro de Capacitación PGR</p>
+                <p class="cert-year">1999</p>
+            </div>
+            <div class="cert-item" onclick="openModal('Diplomado en Personalidad del Delincuente', '2000', '')">
+                <h5>Diplomado en Personalidad del Delincuente</h5>
+                <p>Centro de Capacitación de la Procuraduría General de Justicia</p>
+                <p class="cert-year">2000</p>
+            </div>
+            <div class="cert-item" onclick="openModal('Curso de Delitos en Particular', '2001', '')">
+                <h5>Curso de Delitos en Particular</h5>
+                <p>Centro de Capacitación de la Procuraduría General de Justicia</p>
+                <p class="cert-year">2001</p>
+            </div>
+            <div class="cert-item" onclick="openModal('Curso de Identificación de Lesiones', '2001', '')">
+                <h5>Curso de Identificación de Lesiones</h5>
+                <p>Centro de Capacitación de la Procuraduría General de Justicia</p>
+                <p class="cert-year">2001</p>
+            </div>
+            <div class="cert-item" onclick="openModal('Curso de Psiquiatría Forense', '2002', '')">
+                <h5>Curso de Psiquiatría Forense</h5>
+                <p>Centro de Capacitación de la Procuraduría General de Justicia</p>
+                <p class="cert-year">2002</p>
+            </div>
+            <div class="cert-item" onclick="openModal('Curso de El Suicidio', '2003', '')">
+                <h5>Curso de El Suicidio</h5>
+                <p>Centro de Capacitación de la Procuraduría General de Justicia</p>
+                <p class="cert-year">2003</p>
+            </div>
+            <div class="cert-item" onclick="openModal('Curso de Química Legal', '2003', '')">
+                <h5>Curso de Química Legal</h5>
+                <p>Centro de Capacitación de la Procuraduría General de Justicia</p>
+                <p class="cert-year">2003</p>
+            </div>
+            <div class="cert-item" onclick="openModal('Psicología y Psiquiatría Criminológicas', '2004', '')">
+                <h5>Psicología y Psiquiatría Criminológicas</h5>
+                <p>Instituto Jalisciense de Ciencias Forenses (I.J.C.F.)</p>
+                <p class="cert-year">2004</p>
+            </div>
+            <div class="cert-item" onclick="openModal('Diplomado en Procesal Civil', '2005', '')">
+                <h5>Diplomado en Procesal Civil</h5>
+                <p>Colegio de Abogados en Mediación y Medios Alternativos de Jalisco A.C.</p>
+                <p class="cert-year">2005</p>
+            </div>
+            <div class="cert-item" onclick="openModal('Diplomado en Procesal Mercantil', '2006', '')">
+                <h5>Diplomado en Procesal Mercantil</h5>
+                <p>Colegio de Abogados en Mediación y Medios Alternativos de Jalisco A.C.</p>
+                <p class="cert-year">2006</p>
+            </div>
+            <div class="cert-item" onclick="openModal('Diplomado en Procesal Penal', '2007', '')">
+                <h5>Diplomado en Procesal Penal</h5>
+                <p>Colegio de Abogados en Mediación y Medios Alternativos de Jalisco A.C.</p>
+                <p class="cert-year">2007</p>
+            </div>
+            <div class="cert-item" onclick="openModal('Diplomado en Criminalística', '2008', '')">
+                <h5>Diplomado en Criminalística</h5>
+                <p>I.J.C.F.</p>
+                <p class="cert-year">2008</p>
+            </div>
+            <div class="cert-item" onclick="openModal('Seguridad Pública', '2009', '')">
+                <h5>Seguridad Pública</h5>
+                <p>I.J.C.F.</p>
+                <p class="cert-year">2009</p>
+            </div>
+            <div class="cert-item" onclick="openModal('Metodología de la Investigación', '2010', '')">
+                <h5>Metodología de la Investigación</h5>
+                <p>I.J.C.F.</p>
+                <p class="cert-year">2010</p>
+            </div>
+            <div class="cert-item" onclick="openModal('Antropología Forense', '2011', '')">
+                <h5>Antropología Forense</h5>
+                <p>I.J.C.F.</p>
+                <p class="cert-year">2011</p>
+            </div>
+            <div class="cert-item" onclick="openModal('Psicología Forense', '2012', '')">
+                <h5>Psicología Forense</h5>
+                <p>I.J.C.F.</p>
+                <p class="cert-year">2012</p>
+            </div>
+            <div class="cert-item" onclick="openModal('Documentos Cuestionados', '2013', '')">
+                <h5>Documentos Cuestionados</h5>
+                <p>I.J.C.F.</p>
+                <p class="cert-year">2013</p>
+            </div>
+            <div class="cert-item" onclick="openModal('Reconstrucción Facial', '2014', '')">
+                <h5>Reconstrucción Facial</h5>
+                <p>I.J.C.F.</p>
+                <p class="cert-year">2014</p>
+            </div>
+            <div class="cert-item" onclick="openModal('Fotografía Forense', '2015', 'DIP (1).jpeg')">
+                <h5>Fotografía Forense</h5>
+                <p>Instituto Jalisciense de Ciencias Forenses</p>
+                <p class="cert-year">2015</p>
+            </div>
+            <div class="cert-item" onclick="openModal('Planimetría Forense', '2016', '')">
+                <h5>Planimetría Forense</h5>
+                <p>I.J.C.F.</p>
+                <p class="cert-year">2016</p>
+            </div>
+            <div class="cert-item" onclick="openModal('Química Forense', '2017', '')">
+                <h5>Química Forense</h5>
+                <p>I.J.C.F.</p>
+                <p class="cert-year">2017</p>
+            </div>
+            <div class="cert-item" onclick="openModal('Balística Forense', '2018', '')">
+                <h5>Balística Forense</h5>
+                <p>I.J.C.F.</p>
+                <p class="cert-year">2018</p>
+            </div>
+            <div class="cert-item" onclick="openModal('Genética Forense', '2019', '')">
+                <h5>Genética Forense</h5>
+                <p>I.J.C.F.</p>
+                <p class="cert-year">2019</p>
+            </div>
+            <div class="cert-item" onclick="openModal('Siniestros y Explosivos', '2020', '')">
+                <h5>Siniestros y Explosivos</h5>
+                <p>I.J.C.F.</p>
+                <p class="cert-year">2020</p>
+            </div>
+            <div class="cert-item" onclick="openModal('Medicina Legal', '2021', '')">
+                <h5>Medicina Legal</h5>
+                <p>I.J.C.F.</p>
+                <p class="cert-year">2021</p>
+            </div>
+            <div class="cert-item" onclick="openModal('Hechos de Tránsito', '2022', '')">
+                <h5>Hechos de Tránsito</h5>
+                <p>I.J.C.F.</p>
+                <p class="cert-year">2022</p>
+            </div>
+            <div class="cert-item" onclick="openModal('Identificación de Personas', '2023', '')">
+                <h5>Identificación de Personas</h5>
+                <p>I.J.C.F.</p>
+                <p class="cert-year">2023</p>
+            </div>
+            <div class="cert-item"
+                onclick="openModal('Valoración de Pruebas (Nuevo Sistema Penal Acusatorio)', '2023', '')">
+                <h5>Valoración de Pruebas (Nuevo Sistema Penal Acusatorio)</h5>
+                <p>I.J.C.F.</p>
+                <p class="cert-year">2023</p>
+            </div>
+            <div class="cert-item"
+                onclick="openModal('Etapas del Proceso Penal (Nuevo Sistema Penal Acusatorio)', '2023', '')">
+                <h5>Etapas del Proceso Penal (Nuevo Sistema Penal Acusatorio)</h5>
+                <p>I.J.C.F.</p>
+                <p class="cert-year">2023</p>
+            </div>
+            <div class="cert-item"
+                onclick="openModal('Diplomado Teórico Práctico de Juicios Orales en Materia Penal', '2023', '')">
+                <h5>Diplomado Teórico Práctico de Juicios Orales en Materia Penal</h5>
+                <p>Instituto de Estudios Profesionales en Ciencias Penales (I.E.P.C.P.)</p>
+                <p class="cert-year">2023</p>
+            </div>
+            <div class="cert-item"
+                onclick="openModal('Curso Teórico Práctico de Juicios Orales Mercantiles', '2023', '')">
+                <h5>Curso Teórico Práctico de Juicios Orales Mercantiles</h5>
+                <p>Instituto de Respaldo Jurídico Universitario (R.E.J.U.)</p>
+                <p class="cert-year">2023</p>
+            </div>
+            <div class="cert-item" onclick="openModal('Diplomado en Mediación', '2023', '')">
+                <h5>Diplomado en Mediación</h5>
+                <p>Centro Público de Mediación Municipal de San Pedro Tlaquepaque</p>
+                <p class="cert-year">2023</p>
+            </div>
+            <div class="cert-item"
+                onclick="openModal('Especialidad en Documentos Cuestionados y Grafoscopía', '2023', '')">
+                <h5>Especialidad en Documentos Cuestionados y Grafoscopía</h5>
+                <p>I.J.C.F.</p>
+                <p class="cert-year">2023</p>
+            </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="section">
+            <h2 class="section-title">Contacto Profesional</h2>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <i class="fas fa-phone"></i>
+                    <h4>Teléfonos</h4>
+                    <p><a href="tel:9983963827">998 396 3827</a></p>
+                    <p><a href="tel:3337785120">333 778 5120</a></p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h4>Correos Electrónicos</h4>
+                    <p><a href="mailto:lic.azua@gmx.com">lic.azua@gmx.com</a></p>
+                    <p><a href="mailto:lic.azua@criminis.com.mx">lic.azua@criminis.com.mx</a></p>
+                    <p><a href="mailto:lic.azua@abogadosforenses.org">lic.azua@abogadosforenses.org</a></p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-briefcase"></i>
+                    <h4>Servicios Especializados</h4>
+                    <p>Consultoría Legal</p>
+                    <p>Peritajes Criminalísticos</p>
+                    <p>Documentoscopía y Grafoscopía</p>
+                    <p>Investigación Forense</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-certificate"></i>
+                    <h4>Certificaciones Vigentes</h4>
+                    <p>Jalisco • Yucatán • Quintana Roo</p>
+                    <p>Nuevo León • Tamaulipas</p>
+                    <p>Visa de Negocios Vigente</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal para mostrar diplomas -->
+        <div id="diplomaModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3 id="modalTitle">Certificación</h3>
+                <div class="diploma-placeholder">
+                    <div style="text-align: center;">
+                        <i class="fas fa-certificate" style="font-size: 3rem; color: #EFEFEF; margin-bottom: 1rem;"></i>
+                        <p>Imagen con caracter solo ilustrativo</p>
+                        <p style="font-size: 0.9rem; color: #666; margin-top: 1rem;">
+                            <img src="https://alulisesazua.wordpress.com/wp-content/uploads/2025/05/dip-1.jpeg"
+                                alt="Diploma" style="width: 30%; height: auto;" &gt;<br>
+                        </p>
+                        <div id="diplomaModal" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <h3 id="modalTitle">Certificación</h3>
+                                <div class="diploma-placeholder">
+                                    <div style="text-align: center;">
+                                        <i class="fas fa-certificate"
+                                            style="font-size: 3rem; color: #EFEFEF; margin-bottom: 1rem;"></i>
+                                        <p>Imagen con caracter solo ilustrativo</p>
+                                        <p style="font-size: 0.9rem; color: #666; margin-top: 1rem;">
+                                            <img src="https://alulisesazua.wordpress.com/wp-content/uploads/2025/05/dip-1.jpg"
+                                                alt="Diploma" style="width: 30%; height: auto;" &gt;<br>
+                                        </p>
+                                        </p>
+                                        <div id="diplomaModal" class="modal">
+                                            <div class="modal-content">
+                                                <span class="close">&times;</span>
+                                                <h3 id="modalTitle">Certificación</h3>
+                                                <div class="diploma-placeholder">
+                                                    <div style="text-align: center;">
+                                                        <i class="fas fa-certificate"
+                                                            style="font-size: 3rem; color: #EFEFEF; margin-bottom: 1rem;"></i>
+                                                        <p>Imagen con caracter solo ilustrativo</p>
+                                                        <p style="font-size: 0.9rem; color: #666; margin-top: 1rem;">
+                                                            <img src="https://alulisesazua.wordpress.com/wp-content/uploads/2025/05/dip-2.jpg"
+                                                                alt="Diploma" style="width: 30%; height: auto;" &gt;<br>
+                                                        </p>
+                                                        </p>
+                                                        <div id="diplomaModal" class="modal">
+                                                            <div class="modal-content">
+                                                                <span class="close">&times;</span>
+                                                                <h3 id="modalTitle">Certificación</h3>
+                                                                <div class="diploma-placeholder">
+                                                                    <div style="text-align: center;">
+                                                                        <i class="fas fa-certificate"
+                                                                            style="font-size: 3rem; color: #EFEFEF; margin-bottom: 1rem;"></i>
+                                                                        <p>Imagen con caracter solo ilustrativo</p>
+                                                                        <p
+                                                                            style="font-size: 0.9rem; color: #666; margin-top: 1rem;">
+                                                                            <img src="https://alulisesazua.wordpress.com/wp-content/uploads/2025/05/dip-3.jpg"
+                                                                                alt="Diploma"
+                                                                                style="width: 30%; height: auto;"
+                                                                                &gt;<br>
+                                                                        </p>
+                                                                        </p>
+                                                                        <div id="diplomaModal" class="modal">
+                                                                            <div class="modal-content">
+                                                                                <span class="close">&times;</span>
+                                                                                <h3 id="modalTitle">Certificación</h3>
+                                                                                <div class="diploma-placeholder">
+                                                                                    <div style="text-align: center;">
+                                                                                        <i class="fas fa-certificate"
+                                                                                            style="font-size: 3rem; color: #EFEFEF; margin-bottom: 1rem;"></i>
+                                                                                        <p>Imagen con caracter solo
+                                                                                            ilustrativo</p>
+                                                                                        <p
+                                                                                            style="font-size: 0.9rem; color: #666; margin-top: 1rem;">
+                                                                                            <img src="https://alulisesazua.wordpress.com/wp-content/uploads/2025/05/dip-4.jpg"
+                                                                                                alt="Diploma"
+                                                                                                style="width: 30%; height: auto;"
+                                                                                                &gt;<br>
+                                                                                        </p>
+                                                                                        </p>
+                                                                                        <div id="diplomaModal"
+                                                                                            class="modal">
+                                                                                            <div class="modal-content">
+                                                                                                <span
+                                                                                                    class="close">&times;</span>
+                                                                                                <h3 id="modalTitle">
+                                                                                                    Certificación</h3>
+                                                                                                <div
+                                                                                                    class="diploma-placeholder">
+                                                                                                    <div
+                                                                                                        style="text-align: center;">
+                                                                                                        <i class="fas fa-certificate"
+                                                                                                            style="font-size: 3rem; color: #EFEFEF; margin-bottom: 1rem;"></i>
+                                                                                                        <p>Imagen con
+                                                                                                            caracter
+                                                                                                            solo
+                                                                                                            ilustrativo
+                                                                                                        </p>
+                                                                                                        <p
+                                                                                                            style="font-size: 0.9rem; color: #666; margin-top: 1rem;">
+                                                                                                            <img src="https://alulisesazua.wordpress.com/wp-content/uploads/2025/05/dip-5.jpg"
+                                                                                                                alt="Diploma"
+                                                                                                                style="width: 30%; height: auto;"
+                                                                                                                &gt;<br>
+                                                                                                        </p>
+                                                                                                        </p>
+                                                                                                        <div id="diplomaModal"
+                                                                                                            class="modal">
+                                                                                                            <div
+                                                                                                                class="modal-content">
+                                                                                                                <span
+                                                                                                                    class="close">&times;</span>
+                                                                                                                <h3
+                                                                                                                    id="modalTitle">
+                                                                                                                    Certificación
+                                                                                                                </h3>
+                                                                                                                <div
+                                                                                                                    class="diploma-placeholder">
+                                                                                                                    <div
+                                                                                                                        style="text-align: center;">
+                                                                                                                        <i class="fas fa-certificate"
+                                                                                                                            style="font-size: 3rem; color: #EFEFEF; margin-bottom: 1rem;"></i>
+                                                                                                                        <p>Imagen
+                                                                                                                            con
+                                                                                                                            caracter
+                                                                                                                            solo
+                                                                                                                            ilustrativo
+                                                                                                                        </p>
+                                                                                                                        <p
+                                                                                                                            style="font-size: 0.9rem; color: #666; margin-top: 1rem;">
+                                                                                                                            <img src="https://alulisesazua.wordpress.com/wp-content/uploads/2025/05/dip-6.jpg"
+                                                                                                                                alt="Diploma"
+                                                                                                                                style="width: 30%; height: auto;"
+                                                                                                                                &gt;<br>
+                                                                                                                        </p>
+                                                                                                                        </p>
+                                                                                                                        <div id="diplomaModal"
+                                                                                                                            class="modal">
+                                                                                                                            <div
+                                                                                                                                class="modal-content">
+                                                                                                                                <span
+                                                                                                                                    class="close">&times;</span>
+                                                                                                                                <h3
+                                                                                                                                    id="modalTitle">
+                                                                                                                                    Certificación
+                                                                                                                                </h3>
+                                                                                                                                <div
+                                                                                                                                    class="diploma-placeholder">
+                                                                                                                                    <div
+                                                                                                                                        style="text-align: center;">
+                                                                                                                                        <i class="fas fa-certificate"
+                                                                                                                                            style="font-size: 3rem; color: #EFEFEF; margin-bottom: 1rem;"></i>
+                                                                                                                                        <p>Imagen
+                                                                                                                                            con
+                                                                                                                                            caracter
+                                                                                                                                            solo
+                                                                                                                                            ilustrativo
+                                                                                                                                        </p>
+                                                                                                                                        <p
+                                                                                                                                            style="font-size: 0.9rem; color: #666; margin-top: 1rem;">
+                                                                                                                                            <img src="https://alulisesazua.wordpress.com/wp-content/uploads/2025/05/dip-7.jpg"
+                                                                                                                                                alt="Diploma"
+                                                                                                                                                style="width: 30%; height: auto;"
+                                                                                                                                                &gt;<br>
+                                                                                                                                        </p>
+                                                                                                                                        </p>
+                                                                                                                                        <div id="diplomaModal"
+                                                                                                                                            class="modal">
+                                                                                                                                            <div
+                                                                                                                                                class="modal-content">
+                                                                                                                                                <span
+                                                                                                                                                    class="close">&times;</span>
+                                                                                                                                                <h3
+                                                                                                                                                    id="modalTitle">
+                                                                                                                                                    Certificación
+                                                                                                                                                </h3>
+                                                                                                                                                <div
+                                                                                                                                                    class="diploma-placeholder">
+                                                                                                                                                    <div
+                                                                                                                                                        style="text-align: center;">
+                                                                                                                                                        <i class="fas fa-certificate"
+                                                                                                                                                            style="font-size: 3rem; color: #EFEFEF; margin-bottom: 1rem;"></i>
+                                                                                                                                                        <p>Imagen
+                                                                                                                                                            con
+                                                                                                                                                            caracter
+                                                                                                                                                            solo
+                                                                                                                                                            ilustrativo
+                                                                                                                                                        </p>
+                                                                                                                                                        <p
+                                                                                                                                                            style="font-size: 0.9rem; color: #666; margin-top: 1rem;">
+                                                                                                                                                            <img src="https://alulisesazua.wordpress.com/wp-content/uploads/2025/05/dip-8.jpg"
+                                                                                                                                                                alt="Diploma"
+                                                                                                                                                                style="width: 30%; height: auto;"
+                                                                                                                                                                &gt;<br>
+                                                                                                                                                        </p>
+                                                                                                                                                        </p>
+                                                                                                                                                        <div id="diplomaModal"
+                                                                                                                                                            class="modal">
+                                                                                                                                                            <div
+                                                                                                                                                                class="modal-content">
+                                                                                                                                                                <span
+                                                                                                                                                                    class="close">&times;</span>
+                                                                                                                                                                <h3
+                                                                                                                                                                    id="modalTitle">
+                                                                                                                                                                    Certificación
+                                                                                                                                                                </h3>
+                                                                                                                                                                <div
+                                                                                                                                                                    class="diploma-placeholder">
+                                                                                                                                                                    <div
+                                                                                                                                                                        style="text-align: center;">
+                                                                                                                                                                        <i class="fas fa-certificate"
+                                                                                                                                                                            style="font-size: 3rem; color: #EFEFEF; margin-bottom: 1rem;"></i>
+                                                                                                                                                                        <p>Imagen
+                                                                                                                                                                            con
+                                                                                                                                                                            caracter
+                                                                                                                                                                            solo
+                                                                                                                                                                            ilustrativo
+                                                                                                                                                                        </p>
+                                                                                                                                                                        <p
+                                                                                                                                                                            style="font-size: 0.9rem; color: #666; margin-top: 1rem;">
+                                                                                                                                                                            <img src="https://alulisesazua.wordpress.com/wp-content/uploads/2025/05/dip-9.jpg"
+                                                                                                                                                                                alt="Diploma"
+                                                                                                                                                                                style="width: 30%; height: auto;"
+                                                                                                                                                                                &gt;<br>
+                                                                                                                                                                        </p>
+                                                                                                                                                                        </p>
+                                                                                                                                                                        <div id="diplomaModal"
+                                                                                                                                                                            class="modal">
+                                                                                                                                                                            <div
+                                                                                                                                                                                class="modal-content">
+                                                                                                                                                                                <span
+                                                                                                                                                                                    class="close">&times;</span>
+                                                                                                                                                                                <h3
+                                                                                                                                                                                    id="modalTitle">
+                                                                                                                                                                                    Certificación
+                                                                                                                                                                                </h3>
+                                                                                                                                                                                <div
+                                                                                                                                                                                    class="diploma-placeholder">
+                                                                                                                                                                                    <div
+                                                                                                                                                                                        style="text-align: center;">
+                                                                                                                                                                                        <i class="fas fa-certificate"
+                                                                                                                                                                                            style="font-size: 3rem; color: #EFEFEF; margin-bottom: 1rem;"></i>
+                                                                                                                                                                                        <p>Imagen
+                                                                                                                                                                                            con
+                                                                                                                                                                                            caracter
+                                                                                                                                                                                            solo
+                                                                                                                                                                                            ilustrativo
+                                                                                                                                                                                        </p>
+                                                                                                                                                                                        <p
+                                                                                                                                                                                            style="font-size: 0.9rem; color: #666; margin-top: 1rem;">
+                                                                                                                                                                                            <img src="https://alulisesazua.wordpress.com/wp-content/uploads/2025/05/dip-10.jpg"
+                                                                                                                                                                                                alt="Diploma"
+                                                                                                                                                                                                style="width: 30%; height: auto;"
+                                                                                                                                                                                                &gt;<br>
+                                                                                                                                                                                        </p>
+                                                                                                                                                                                        </p>
+                                                                                                                                                                                        <div id="diplomaModal"
+                                                                                                                                                                                            class="modal">
+                                                                                                                                                                                            <div
+                                                                                                                                                                                                class="modal-content">
+                                                                                                                                                                                                <span
+                                                                                                                                                                                                    class="close">&times;</span>
+                                                                                                                                                                                                <h3
+                                                                                                                                                                                                    id="modalTitle">
+                                                                                                                                                                                                    Certificación
+                                                                                                                                                                                                </h3>
+                                                                                                                                                                                                <div
+                                                                                                                                                                                                    class="diploma-placeholder">
+                                                                                                                                                                                                    <div
+                                                                                                                                                                                                        style="text-align: center;">
+                                                                                                                                                                                                        <i class="fas fa-certificate"
+                                                                                                                                                                                                            style="font-size: 3rem; color: #EFEFEF; margin-bottom: 1rem;"></i>
+                                                                                                                                                                                                        <p>Imagen
+                                                                                                                                                                                                            con
+                                                                                                                                                                                                            caracter
+                                                                                                                                                                                                            solo
+                                                                                                                                                                                                            ilustrativo
+                                                                                                                                                                                                        </p>
+                                                                                                                                                                                                        <p
+                                                                                                                                                                                                            style="font-size: 0.9rem; color: #666; margin-top: 1rem;">
+                                                                                                                                                                                                            <img src="https://alulisesazua.wordpress.com/wp-content/uploads/2025/05/dip-11.jpg"
+                                                                                                                                                                                                                alt="Diploma"
+                                                                                                                                                                                                                style="width: 30%; height: auto;"
+                                                                                                                                                                                                                &gt;<br>
+                                                                                                                                                                                                        </p>
+                                                                                                                                                                                                        </p>
+                                                                                                                                                                                                        <div id="diplomaModal"
+                                                                                                                                                                                                            class="modal">
+                                                                                                                                                                                                            <div
+                                                                                                                                                                                                                class="modal-content">
+                                                                                                                                                                                                                <span
+                                                                                                                                                                                                                    class="close">&times;</span>
+                                                                                                                                                                                                                <h3
+                                                                                                                                                                                                                    id="modalTitle">
+                                                                                                                                                                                                                    Certificación
+                                                                                                                                                                                                                </h3>
+                                                                                                                                                                                                                <div
+                                                                                                                                                                                                                    class="diploma-placeholder">
+                                                                                                                                                                                                                    <div
+                                                                                                                                                                                                                        style="text-align: center;">
+                                                                                                                                                                                                                        <i class="fas fa-certificate"
+                                                                                                                                                                                                                            style="font-size: 3rem; color: #EFEFEF; margin-bottom: 1rem;"></i>
+                                                                                                                                                                                                                        <p>Imagen
+                                                                                                                                                                                                                            con
+                                                                                                                                                                                                                            caracter
+                                                                                                                                                                                                                            solo
+                                                                                                                                                                                                                            ilustrativo
+                                                                                                                                                                                                                        </p>
+                                                                                                                                                                                                                        <p
+                                                                                                                                                                                                                            style="font-size: 0.9rem; color: #666; margin-top: 1rem;">
+                                                                                                                                                                                                                            <img src="https://alulisesazua.wordpress.com/wp-content/uploads/2025/05/dip-12.jpg"
+                                                                                                                                                                                                                                alt="Diploma"
+                                                                                                                                                                                                                                style="width: 30%; height: auto;"
+                                                                                                                                                                                                                                &gt;<br>
+                                                                                                                                                                                                                        </p>
+                                                                                                                                                                                                                    </div>
+                                                                                                                                                                                                                </div>
+                                                                                                                                                                                                            </div>
+                                                                                                                                                                                                        </div>
+
+                                                                                                                                                                                                        <script>
+                                                                                                                                                                                                            // Navegación suave
+                                                                                                                                                                                                            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                                                                                                                                                                                                                anchor.addEventListener('click', function (e) {
+                                                                                                                                                                                                                    e.preventDefault();
+                                                                                                                                                                                                                    const target = document.querySelector(this.getAttribute('href'));
+                                                                                                                                                                                                                    if (target) {
+                                                                                                                                                                                                                        target.scrollIntoView({
+                                                                                                                                                                                                                            behavior: 'smooth',
+                                                                                                                                                                                                                            block: 'start'
+                                                                                                                                                                                                                        });
+                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                });
+                                                                                                                                                                                                            });
+
+                                                                                                                                                                                                            // Efecto de navbar al hacer scroll
+                                                                                                                                                                                                            window.addEventListener('scroll', function () {
+                                                                                                                                                                                                                const navbar = document.querySelector('.navbar');
+                                                                                                                                                                                                                if (window.scrollY > 50) {
+                                                                                                                                                                                                                    navbar.style.background = 'rgba(26, 35, 126, 0.98)';
+                                                                                                                                                                                                                } else {
+                                                                                                                                                                                                                    navbar.style.background = 'rgba(26, 35, 126, 0.95)';
+                                                                                                                                                                                                                }
+                                                                                                                                                                                                            });
+
+                                                                                                                                                                                                            // Modal para diplomas
+                                                                                                                                                                                                            const modal = document.getElementById('diplomaModal');
+                                                                                                                                                                                                            const modalTitle = document.getElementById('modalTitle');
+                                                                                                                                                                                                            const closeBtn = document.getElementsByClassName('close')[0];
+
+                                                                                                                                                                                                            function openModal(title) {
+                                                                                                                                                                                                                modal.style.display = 'block';
+                                                                                                                                                                                                                modalTitle.textContent = title;
+                                                                                                                                                                                                                document.body.style.overflow = 'hidden';
+                                                                                                                                                                                                            }
+
+                                                                                                                                                                                                            closeBtn.onclick = function () {
+                                                                                                                                                                                                                modal.style.display = 'none';
+                                                                                                                                                                                                                document.body.style.overflow = 'auto';
+                                                                                                                                                                                                            }
+
+                                                                                                                                                                                                            window.onclick = function (event) {
+                                                                                                                                                                                                                if (event.target == modal) {
+                                                                                                                                                                                                                    modal.style.display = 'none';
+                                                                                                                                                                                                                    document.body.style.overflow = 'auto';
+                                                                                                                                                                                                                }
+                                                                                                                                                                                                            }
+
+                                                                                                                                                                                                            // Animaciones al hacer scroll
+                                                                                                                                                                                                            const observerOptions = {
+                                                                                                                                                                                                                threshold: 0.1,
+                                                                                                                                                                                                                rootMargin: '0px 0px -50px 0px'
+                                                                                                                                                                                                            };
+
+                                                                                                                                                                                                            const observer = new IntersectionObserver(function (entries) {
+                                                                                                                                                                                                                entries.forEach(entry => {
+                                                                                                                                                                                                                    if (entry.isIntersecting) {
+                                                                                                                                                                                                                        entry.target.style.opacity = '1';
+                                                                                                                                                                                                                        entry.target.style.transform = 'translateY(0)';
+                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                });
+                                                                                                                                                                                                            }, observerOptions);
+
+                                                                                                                                                                                                            // Observar elementos para animaciones
+                                                                                                                                                                                                            document.querySelectorAll('.specialty-card, .timeline-item, .cert-item, .contact-card').forEach(el => {
+                                                                                                                                                                                                                el.style.opacity = '0';
+                                                                                                                                                                                                                el.style.transform = 'translateY(30px)';
+                                                                                                                                                                                                                el.style.transition = 'all 0.6s ease';
+                                                                                                                                                                                                                observer.observe(el);
+                                                                                                                                                                                                            });
+                                                                                                                                                                                                        </script>
+    </section>
+
+    <script>
+        function mostrarSitioCompleto() {
+            document.querySelector('.card').style.display = 'none';
+            document.getElementById('sitio').style.display = 'block';
+        }
+    </script>
+</body>
+
+</html>
